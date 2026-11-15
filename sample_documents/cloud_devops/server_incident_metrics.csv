@@ -1,0 +1,6 @@
+incident_id,node,severity,component,mttr_mins,root_cause
+INC-101,worker-pool-01,P1,kube-proxy,14,OOM killer terminated network proxy pod
+INC-102,worker-pool-03,P2,containerd,25,Disk pressure due to unrotated container logs
+INC-103,control-plane-01,P1,etcd,8,Network latency spike between etcd quorum members
+INC-104,worker-pool-02,P3,coredns,19,DNS upstream resolver connection timeout
+INC-105,ingress-gw-01,P2,envoy-proxy,12,TLS certificate secret renewal lock contention

@@ -1,0 +1,17 @@
+# Kubernetes Cluster Architecture and Setup Guide
+
+1. Overview of Kubernetes Architecture
+Kubernetes is a portable, extensible open-source platform for managing containerized workloads and services. The system groups application containers into logical units called Pods for easy management and discovery. The architecture is split between a control plane and worker nodes.
+
+2. Control Plane Components
+The control plane makes global decisions about the cluster, such as workload scheduling, detecting node failures, and responding to cluster events:
+- kube-apiserver: Exposes the Kubernetes API and serves as the front end for control plane communications.
+- etcd: Consistent and highly-available key-value store used as Kubernetes backing store for all cluster state data.
+- kube-scheduler: Watches for newly created Pods with no assigned node and selects an optimal node for them to run on.
+- kube-controller-manager: Runs controller processes including node controller, job controller, and endpoint controller.
+
+3. Worker Node Architecture
+Worker node components run on every node, maintaining running pods and providing runtime environments:
+- kubelet: An agent that runs on each node in the cluster, ensuring that containers are running in a Pod according to PodSpecs.
+- kube-proxy: A network proxy that runs on each node, maintaining network rules to allow network communication to Pods from inside or outside the cluster.
+- Container Runtime: Software responsible for running containers (e.g., containerd or CRI-O).

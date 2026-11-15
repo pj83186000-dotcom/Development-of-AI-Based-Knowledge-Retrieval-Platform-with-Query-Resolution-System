@@ -1,0 +1,6 @@
+age_group,hr_min_bpm,hr_max_bpm,systolic_min_mmhg,systolic_max_mmhg,diastolic_min_mmhg,diastolic_max_mmhg,resp_min,resp_max
+Neonate (0-28 days),100,180,60,90,30,60,30,60
+Infant (1-12 months),80,150,70,100,45,65,25,40
+Toddler (1-3 years),70,130,80,110,50,70,20,30
+School Age (6-12 years),65,110,90,120,60,80,16,24
+Adult (18+ years),60,100,90,120,60,80,12,20

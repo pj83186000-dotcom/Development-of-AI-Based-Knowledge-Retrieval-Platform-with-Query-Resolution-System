@@ -1,0 +1,17 @@
+# Core Web Backend
+fastapi>=0.115.0
+uvicorn>=0.30.0
+pydantic>=2.8.0
+
+# Document Ingestion Parsers
+pypdf>=5.0.0
+python-docx>=1.1.0
+pandas>=2.2.0
+
+# Vector Embeddings and Numerical Computation
+numpy>=2.0.0
+sentence-transformers>=3.0.0
+
+# Testing Framework
+pytest>=8.0.0
+
