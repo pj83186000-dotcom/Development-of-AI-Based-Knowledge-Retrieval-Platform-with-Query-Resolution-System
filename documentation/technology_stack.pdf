@@ -1,0 +1,337 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R 7 0 R] /Count 5 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 8 0 R /Resources << /Font << /F1 13 0 R /F2 14 0 R /F3 15 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 9 0 R /Resources << /Font << /F1 13 0 R /F2 14 0 R /F3 15 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 10 0 R /Resources << /Font << /F1 13 0 R /F2 14 0 R /F3 15 0 R >> >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 11 0 R /Resources << /Font << /F1 13 0 R /F2 14 0 R /F3 15 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 12 0 R /Resources << /Font << /F1 13 0 R /F2 14 0 R /F3 15 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 4980 >>
+stream
+BT /F2 16 Tf 54 730 Td (Technology Stack Specification) Tj ET
+54 718 m 558 718 l S
+BT /F1 9 Tf 54 696 Td (**Project**: AI-Based Knowledge Retrieval Platform with Query Resolution System) Tj ET
+BT /F1 9 Tf 54 678 Td (**Milestone**: 1 -- Technical Research & Core Foundations) Tj ET
+BT /F1 9 Tf 54 660 Td (**Document**: Technology Stack Specification) Tj ET
+BT /F1 9 Tf 54 642 Td (---) Tj ET
+BT /F2 13 Tf 54 616 Td (1. Overview of Technology Stack) Tj ET
+BT /F1 9 Tf 54 598 Td (This document details every library, tool, and framework selected for Milestone 1 of the) Tj ET
+BT /F1 9 Tf 54 585 Td (Knowledge Retrieval Platform. Each choice is evaluated against alternatives and) Tj ET
+BT /F1 9 Tf 54 572 Td (justified based on:) Tj ET
+BT /F2 9 Tf 54 554 Td (*) Tj ET
+BT /F1 9 Tf 68 554 Td (**Beginner-friendliness**: Clean, readable APIs that explain foundational concepts) Tj ET
+BT /F1 9 Tf 68 541 Td (rather than hiding them behind layers of complex abstraction.) Tj ET
+BT /F2 9 Tf 54 525 Td (*) Tj ET
+BT /F1 9 Tf 68 525 Td (**Technical robustness**: High reliability, active open-source maintenance, and) Tj ET
+BT /F1 9 Tf 68 512 Td (cross-platform stability.) Tj ET
+BT /F2 9 Tf 54 496 Td (*) Tj ET
+BT /F1 9 Tf 68 496 Td (**Local independence**: Running embeddings and retrieval locally without requiring) Tj ET
+BT /F1 9 Tf 68 483 Td (paid third-party API keys or constant cloud network connectivity.) Tj ET
+BT /F3 7.5 Tf 64 467 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 457 Td (|                              PRESENTATION LAYER                         |) Tj ET
+BT /F3 7.5 Tf 64 447 Td (|           Vanilla HTML5  *  Modern CSS3  *  Vanilla JavaScript           |) Tj ET
+BT /F3 7.5 Tf 64 437 Td (|                Browser Web Speech API \(STT & TTS\)                       |) Tj ET
+BT /F3 7.5 Tf 64 427 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 417 Td (                                       HTTP / JSON \(REST API\)) Tj ET
+BT /F3 7.5 Tf 64 407 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 397 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 387 Td (|                              BACKEND API LAYER                          |) Tj ET
+BT /F3 7.5 Tf 64 377 Td (|                       FastAPI 0.163  *  Uvicorn 0.54                    |) Tj ET
+BT /F3 7.5 Tf 64 367 Td (|                   Pydantic Data Validation & Serialization              |) Tj ET
+BT /F3 7.5 Tf 64 357 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 347 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 337 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 327 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 317 Td (|                          KNOWLEDGE INGESTION ENGINE                     |) Tj ET
+BT /F3 7.5 Tf 64 307 Td (|     pypdf \(PDF\)  *  python-docx \(DOCX\)  *  pandas \(CSV\)  *  codecs \(TXT\)|) Tj ET
+BT /F3 7.5 Tf 64 297 Td (|            Text Cleaning  *  Sentence-Aware Sliding Chunker             |) Tj ET
+BT /F3 7.5 Tf 64 287 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 277 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 267 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 257 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 247 Td (|                       EMBEDDINGS & VECTOR OPERATIONS                    |) Tj ET
+BT /F3 7.5 Tf 64 237 Td (|          Sentence-Transformers 6.3  *  all-MiniLM-L6-v2 \(384-D\)         |) Tj ET
+BT /F3 7.5 Tf 64 227 Td (|              PyTorch 2.15 \(CPU\)  *  NumPy 2.5 \(Cosine Sim\)              |) Tj ET
+BT /F3 7.5 Tf 64 217 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 207 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 197 Td (                                     ) Tj ET
+BT /F3 7.5 Tf 64 187 Td (+                                                                         +) Tj ET
+BT /F3 7.5 Tf 64 177 Td (|                              STORAGE LAYER                              |) Tj ET
+BT /F3 7.5 Tf 64 167 Td (|                    SQLite 3 \(Documents & Chunk Records\)                 |) Tj ET
+BT /F3 7.5 Tf 64 157 Td (|                   Local File System \(Uploaded Originals\)                |) Tj ET
+BT /F3 7.5 Tf 64 147 Td (+                                                                         +) Tj ET
+BT /F1 9 Tf 54 137 Td (---) Tj ET
+BT /F2 13 Tf 54 111 Td (2. Detailed Layer-by-Layer Evaluation) Tj ET
+BT /F2 11 Tf 54 87 Td (2.1 Programming Language & Runtime) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 1 of 5  --  Technology Stack Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+9 0 obj
+<< /Length 4398 >>
+stream
+BT /F2 9.5 Tf 54 726 Td (Chosen: **Python 3.14 \(with isolated Virtual Environment `.venv`\)**) Tj ET
+BT /F2 9 Tf 54 712 Td (*) Tj ET
+BT /F1 9 Tf 68 712 Td (**Role**: Core language for backend services, text processing, data science, and) Tj ET
+BT /F1 9 Tf 68 699 Td (vector operations.) Tj ET
+BT /F2 9 Tf 54 683 Td (*) Tj ET
+BT /F1 9 Tf 68 683 Td (**Why Chosen**: Python is the global standard for AI, machine learning, and natural) Tj ET
+BT /F1 9 Tf 68 670 Td (language processing. Its rich ecosystem allows direct access to state-of-the-art) Tj ET
+BT /F1 9 Tf 68 657 Td (embedding models and text manipulation libraries.) Tj ET
+BT /F2 9 Tf 54 641 Td (*) Tj ET
+BT /F1 9 Tf 68 641 Td (**Beginner Perspective**: Python has clean, readable syntax that looks like) Tj ET
+BT /F1 9 Tf 68 628 Td (structured pseudocode, making it the most accessible language for a beginner) Tj ET
+BT /F1 9 Tf 68 615 Td (learning RAG architecture.) Tj ET
+BT /F2 9 Tf 54 599 Td (*) Tj ET
+BT /F1 9 Tf 68 599 Td (**Isolation Strategy**: All project packages are installed inside a local `.venv/`) Tj ET
+BT /F1 9 Tf 68 586 Td (virtual environment, leaving your computer's global Python installation completely) Tj ET
+BT /F1 9 Tf 68 573 Td (unaltered.) Tj ET
+BT /F1 9 Tf 54 557 Td (---) Tj ET
+BT /F2 11 Tf 54 533 Td (2.2 Backend Web Framework & Server) Tj ET
+BT /F2 9.5 Tf 54 513 Td (Chosen: **FastAPI \(`0.163.0`\) + Uvicorn \(`0.54.0`\)**) Tj ET
+BT /F2 9 Tf 54 499 Td (*) Tj ET
+BT /F1 9 Tf 68 499 Td (**Role**: Provides the REST API layer connecting our frontend to the ingestion) Tj ET
+BT /F1 9 Tf 68 486 Td (engine and retrieval pipeline.) Tj ET
+BT /F2 9 Tf 54 470 Td (*) Tj ET
+BT /F1 9 Tf 68 470 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 454 Td (*) Tj ET
+BT /F1 9 Tf 68 454 Td (**Automatic Documentation**: FastAPI automatically generates an interactive API) Tj ET
+BT /F1 9 Tf 68 441 Td (documentation interface at `http://localhost:8000/docs` \(Swagger UI\). Beginners can) Tj ET
+BT /F1 9 Tf 68 428 Td (test endpoints directly in the browser without writing frontend code first.) Tj ET
+BT /F2 9 Tf 54 412 Td (*) Tj ET
+BT /F1 9 Tf 68 412 Td (**Type Safety with Pydantic**: Incoming requests and outgoing responses are strictly) Tj ET
+BT /F1 9 Tf 68 399 Td (validated using standard Python type hints \(`str`, `int`, `float`\), catching bugs) Tj ET
+BT /F1 9 Tf 68 386 Td (before execution.) Tj ET
+BT /F2 9 Tf 54 370 Td (*) Tj ET
+BT /F1 9 Tf 68 370 Td (**High Performance**: Built on top of Starlette and `asyncio`, offering) Tj ET
+BT /F1 9 Tf 68 357 Td (production-grade throughput.) Tj ET
+BT /F2 9.5 Tf 54 337 Td (Comparison with Alternatives:) Tj ET
+BT /F3 7.5 Tf 54 323 Td (Framework | Strengths | Weaknesses | Reason for Rejection / Selection) Tj ET
+BT /F3 7.5 Tf 54 311 Td (**FastAPI** | Auto-docs \(`/docs`\), Pydantic typing, async support, beginner-friendly | Requires understan) Tj ET
+BT /F3 7.5 Tf 54 299 Td (**Flask** | Very simple micro-framework | No built-in validation, manual swagger docs, synchronous by def) Tj ET
+BT /F3 7.5 Tf 54 287 Td (**Django** | Full-stack with built-in admin panel and ORM | Extremely heavy, rigid boilerplate, steep lea) Tj ET
+BT /F1 9 Tf 54 275 Td (---) Tj ET
+BT /F2 11 Tf 54 251 Td (2.3 Document Text Extraction Suite) Tj ET
+BT /F1 9 Tf 54 235 Td (Our system supports four document formats: **PDF, DOCX, TXT, and CSV**.) Tj ET
+BT /F2 9.5 Tf 54 213 Td (1. PDF Extraction: **`pypdf` \(`7.1.0`\)**) Tj ET
+BT /F2 9 Tf 54 199 Td (*) Tj ET
+BT /F1 9 Tf 68 199 Td (**Role**: Reads binary PDF structures and extracts raw textual strings page by page.) Tj ET
+BT /F2 9 Tf 54 183 Td (*) Tj ET
+BT /F1 9 Tf 68 183 Td (**Why Chosen**: Pure Python library with zero external C/C++ compilation or) Tj ET
+BT /F1 9 Tf 68 170 Td (system-level dependencies \(unlike `pdf2image` or `tesseract` which require Poppler) Tj ET
+BT /F1 9 Tf 68 157 Td (and OCR binaries on Windows\).) Tj ET
+BT /F2 9 Tf 54 141 Td (*) Tj ET
+BT /F1 9 Tf 68 141 Td (**Alternative Evaluated**: `PyMuPDF \(fitz\)` is faster on massive PDFs, but has) Tj ET
+BT /F1 9 Tf 68 128 Td (platform-specific wheel dependencies that can fail on bleeding-edge Python versions.) Tj ET
+BT /F1 9 Tf 68 115 Td (`pypdf` works reliably out of the box.) Tj ET
+BT /F2 9.5 Tf 54 95 Td (2. Word Document Extraction: **`python-docx` \(`1.2.0`\)**) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 2 of 5  --  Technology Stack Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+10 0 obj
+<< /Length 4592 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (**Role**: Parses Microsoft Word `.docx` XML archives, extracting text from body) Tj ET
+BT /F1 9 Tf 68 717 Td (paragraphs, headings, and tabular cell grids.) Tj ET
+BT /F2 9 Tf 54 701 Td (*) Tj ET
+BT /F1 9 Tf 68 701 Td (**Why Chosen**: The de-facto standard in the Python ecosystem for `.docx`) Tj ET
+BT /F1 9 Tf 68 688 Td (manipulation. Clean paragraph and table iteration API.) Tj ET
+BT /F2 9.5 Tf 54 668 Td (3. CSV Tabular Processing: **`pandas` \(`3.1.1`\)**) Tj ET
+BT /F2 9 Tf 54 654 Td (*) Tj ET
+BT /F1 9 Tf 68 654 Td (**Role**: Parses comma-separated value tables into structured dataframes and) Tj ET
+BT /F1 9 Tf 68 641 Td (reformats rows into descriptive text chunks.) Tj ET
+BT /F2 9 Tf 54 625 Td (*) Tj ET
+BT /F1 9 Tf 68 625 Td (**Why Chosen**: Standard RAG approaches fail on CSV files if they treat them as) Tj ET
+BT /F1 9 Tf 68 612 Td (plain raw comma-delimited text. With `pandas`, we can transform each row into a) Tj ET
+BT /F1 9 Tf 68 599 Td (structured sentence:) Tj ET
+BT /F3 7.5 Tf 64 583 Td (  "Record ID 104: Service Name is CloudWatch, Department is DevOps, Monthly Cost is $450, Uptime SLA) Tj ET
+BT /F1 9 Tf 54 573 Td (This transformation allows dense embedding models to understand semantic relationships) Tj ET
+BT /F1 9 Tf 54 560 Td (across table rows.) Tj ET
+BT /F2 9.5 Tf 54 538 Td (4. Plain Text Extraction: **Built-in `open\(\)` with multi-encoding fallback**) Tj ET
+BT /F2 9 Tf 54 524 Td (*) Tj ET
+BT /F1 9 Tf 68 524 Td (**Role**: Ingests raw `.txt` and `.md` files.) Tj ET
+BT /F2 9 Tf 54 508 Td (*) Tj ET
+BT /F1 9 Tf 68 508 Td (**Why Chosen**: Native Python standard library. We implement a robust fallback) Tj ET
+BT /F1 9 Tf 68 495 Td (decoding sequence \(`utf-8` $\\rightarrow$ `latin-1` $\\rightarrow$ `cp1252`\) to ensure) Tj ET
+BT /F1 9 Tf 68 482 Td (files encoded on different operating systems never trigger unhandled decoding) Tj ET
+BT /F1 9 Tf 68 469 Td (crashes.) Tj ET
+BT /F1 9 Tf 54 453 Td (---) Tj ET
+BT /F2 11 Tf 54 429 Td (2.4 Vector Embeddings & Numerical Processing) Tj ET
+BT /F2 9.5 Tf 54 409 Td (1. Embedding Model: **`sentence-transformers` \(`6.3.0`\)  --  `all-MiniLM-L6-v2`**) Tj ET
+BT /F2 9 Tf 54 395 Td (*) Tj ET
+BT /F1 9 Tf 68 395 Td (**Role**: Transforms text chunks and user queries into 384-dimensional dense) Tj ET
+BT /F1 9 Tf 68 382 Td (vectors.) Tj ET
+BT /F2 9 Tf 54 366 Td (*) Tj ET
+BT /F1 9 Tf 68 366 Td (**Model Details**:) Tj ET
+BT /F2 9 Tf 54 350 Td (*) Tj ET
+BT /F1 9 Tf 68 350 Td (**Architecture**: 6-layer MiniLM transformer with 22.7 million parameters.) Tj ET
+BT /F2 9 Tf 54 334 Td (*) Tj ET
+BT /F1 9 Tf 68 334 Td (**Embedding Dimension**: 384 dimensions.) Tj ET
+BT /F2 9 Tf 54 318 Td (*) Tj ET
+BT /F1 9 Tf 68 318 Td (**Model File Size**: ~80 MB.) Tj ET
+BT /F2 9 Tf 54 302 Td (*) Tj ET
+BT /F1 9 Tf 68 302 Td (**Inference Efficiency**: Designed specifically for high-throughput sentence) Tj ET
+BT /F1 9 Tf 68 289 Td (encoding on standard CPU hardware due to its compact 6-layer architecture) Tj ET
+BT /F1 9 Tf 68 276 Td (\(reference: Hugging Face `sentence-transformers/all-MiniLM-L6-v2` model card\).) Tj ET
+BT /F2 9 Tf 54 260 Td (*) Tj ET
+BT /F1 9 Tf 68 260 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 244 Td (*) Tj ET
+BT /F1 9 Tf 68 244 Td (**Completely Local & Free**: Runs on your CPU with zero subscription fees, API) Tj ET
+BT /F1 9 Tf 68 231 Td (tokens, or rate limits.) Tj ET
+BT /F2 9 Tf 54 215 Td (*) Tj ET
+BT /F1 9 Tf 68 215 Td (**High Semantic Accuracy**: Ranked as one of the best speed-to-quality ratios on the) Tj ET
+BT /F1 9 Tf 68 202 Td (Massive Text Embedding Benchmark \(MTEB\).) Tj ET
+BT /F2 9 Tf 54 186 Td (*) Tj ET
+BT /F1 9 Tf 68 186 Td (**Privacy**: Knowledge base documents are never sent across the internet to an) Tj ET
+BT /F1 9 Tf 68 173 Td (external cloud provider.) Tj ET
+BT /F2 9.5 Tf 54 153 Td (Comparison with Alternatives:) Tj ET
+BT /F3 7.5 Tf 54 139 Td (Embedding Solution | Dimensions | Hosting | Cost | Evaluation) Tj ET
+BT /F3 7.5 Tf 54 127 Td (**`all-MiniLM-L6-v2`** | **384** | **Local \(CPU\)** | **Free / Open Source** | **SELECTED**: Fast, reliabl) Tj ET
+BT /F3 7.5 Tf 54 115 Td (**OpenAI `text-embedding-3-small`** | 1536 | Cloud API | Pay-per-token \($0.02 / 1M tokens\) | High quality) Tj ET
+BT /F3 7.5 Tf 54 103 Td (**BERT-base-uncased** | 768 | Local | Free | 4x larger file size, significantly slower, not pre-tuned for) Tj ET
+BT /F2 9.5 Tf 54 87 Td (2. Vector Operations & Similarity Search: **`numpy` \(`2.5.4`\)**) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 3 of 5  --  Technology Stack Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+11 0 obj
+<< /Length 4238 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (**Role**: Stores vector matrices in memory and computes mathematical Cosine) Tj ET
+BT /F1 9 Tf 68 717 Td (Similarity.) Tj ET
+BT /F2 9 Tf 54 701 Td (*) Tj ET
+BT /F1 9 Tf 68 701 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 685 Td (*) Tj ET
+BT /F1 9 Tf 68 685 Td (Using pure NumPy array math teaches a beginner how vector distance genuinely) Tj ET
+BT /F1 9 Tf 68 672 Td (functions under the hood.) Tj ET
+BT /F2 9 Tf 54 656 Td (*) Tj ET
+BT /F1 9 Tf 68 656 Td (For small-to-medium educational collections, vectorized NumPy matrix multiplication) Tj ET
+BT /F1 9 Tf 68 643 Td (executes locally in memory without the overhead of external database network) Tj ET
+BT /F1 9 Tf 68 630 Td (connections or background service daemons.) Tj ET
+BT /F2 9.5 Tf 54 610 Td (Comparison with Vector Databases:) Tj ET
+BT /F3 7.5 Tf 54 596 Td (Vector Store | Complexity | Infrastructure | Evaluation for Milestone 1) Tj ET
+BT /F3 7.5 Tf 54 584 Td (**In-Memory NumPy + SQLite** | **Minimal** | **Zero external servers \(Embedded\)** | **SELECTED**: Transpa) Tj ET
+BT /F3 7.5 Tf 54 572 Td (**ChromaDB / FAISS** | Moderate | Embedded C++ library / local daemon | Excellent for Milestone 2+ when c) Tj ET
+BT /F3 7.5 Tf 54 560 Td (**Pinecone / Weaviate Cloud** | High | Hosted Cloud Service | Requires network access, accounts, API keys) Tj ET
+BT /F1 9 Tf 54 548 Td (---) Tj ET
+BT /F2 11 Tf 54 524 Td (2.5 Metadata Database & Storage) Tj ET
+BT /F2 9.5 Tf 54 504 Td (Chosen: **SQLite 3 \(`sqlite3` built into Python\)**) Tj ET
+BT /F2 9 Tf 54 490 Td (*) Tj ET
+BT /F1 9 Tf 68 490 Td (**Role**: Stores relational records for uploaded documents, chunk texts,) Tj ET
+BT /F1 9 Tf 68 477 Td (token/character counts, source file metadata, and creation timestamps.) Tj ET
+BT /F2 9 Tf 54 461 Td (*) Tj ET
+BT /F1 9 Tf 68 461 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 445 Td (*) Tj ET
+BT /F1 9 Tf 68 445 Td (**Zero Configuration**: A single `.db` file stored locally in the project directory.) Tj ET
+BT /F2 9 Tf 54 429 Td (*) Tj ET
+BT /F1 9 Tf 68 429 Td (**ACID Compliant**: Guarantees database integrity even if the application process is) Tj ET
+BT /F1 9 Tf 68 416 Td (terminated unexpectedly.) Tj ET
+BT /F2 9 Tf 54 400 Td (*) Tj ET
+BT /F1 9 Tf 68 400 Td (**Built-in Standard Library**: No external database server \(like PostgreSQL or) Tj ET
+BT /F1 9 Tf 68 387 Td (MySQL\) to install, run, or configure.) Tj ET
+BT /F1 9 Tf 54 371 Td (---) Tj ET
+BT /F2 11 Tf 54 347 Td (2.6 Testing Suite) Tj ET
+BT /F2 9.5 Tf 54 327 Td (Chosen: **`pytest` \(`9.2.0`\)**) Tj ET
+BT /F2 9 Tf 54 313 Td (*) Tj ET
+BT /F1 9 Tf 68 313 Td (**Role**: Automated unit testing of document extractors, text cleaning, chunking) Tj ET
+BT /F1 9 Tf 68 300 Td (boundaries, embedding shapes, and retrieval ranking.) Tj ET
+BT /F2 9 Tf 54 284 Td (*) Tj ET
+BT /F1 9 Tf 68 284 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 268 Td (*) Tj ET
+BT /F1 9 Tf 68 268 Td (Standard Python `assert` statements instead of verbose `self.assertEqual\(...\)`.) Tj ET
+BT /F2 9 Tf 54 252 Td (*) Tj ET
+BT /F1 9 Tf 68 252 Td (Rich failure reports showing exact variable diffs when a test fails.) Tj ET
+BT /F2 9 Tf 54 236 Td (*) Tj ET
+BT /F1 9 Tf 68 236 Td (Seamless test discovery: automatically finds and runs all files matching) Tj ET
+BT /F1 9 Tf 68 223 Td (`test_*.py`.) Tj ET
+BT /F1 9 Tf 54 207 Td (---) Tj ET
+BT /F2 11 Tf 54 183 Td (2.7 Frontend Interface & Voice) Tj ET
+BT /F2 9.5 Tf 54 163 Td (Chosen: **Vanilla HTML5, CSS3, Modern JavaScript + Web Speech API**) Tj ET
+BT /F2 9 Tf 54 149 Td (*) Tj ET
+BT /F1 9 Tf 68 149 Td (**Role**: Lightweight web interface for uploading files, monitoring ingestion) Tj ET
+BT /F1 9 Tf 68 136 Td (status, typing/speaking queries, and viewing retrieved chunks with similarity) Tj ET
+BT /F1 9 Tf 68 123 Td (scores.) Tj ET
+BT /F2 9 Tf 54 107 Td (*) Tj ET
+BT /F1 9 Tf 68 107 Td (**Why Chosen**:) Tj ET
+BT /F2 9 Tf 54 91 Td (*) Tj ET
+BT /F1 9 Tf 68 91 Td (**Zero Build Step**: No complex Node.js, Webpack, Vite, or React build toolchains to) Tj ET
+BT /F1 9 Tf 68 78 Td (install or debug. A beginner can open and edit `.html` and `.js` files directly.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 4 of 5  --  Technology Stack Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+12 0 obj
+<< /Length 2153 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (**Native Web Speech API Support**: Directly accesses browser `SpeechRecognition` and) Tj ET
+BT /F1 9 Tf 68 717 Td (`SpeechSynthesis` without external audio libraries.) Tj ET
+BT /F1 9 Tf 54 701 Td (---) Tj ET
+BT /F2 13 Tf 54 675 Td (3. Technology Dependency Matrix) Tj ET
+BT /F3 7.5 Tf 54 657 Td (Category | Library / Tool | Version | License | Documentation Link) Tj ET
+BT /F3 7.5 Tf 54 645 Td (Runtime | Python | 3.14.3 | PSF License | [https://docs.python.org/3/]\(https://docs.python.org/3/\)) Tj ET
+BT /F3 7.5 Tf 54 633 Td (API Framework | FastAPI | 0.163.0 | MIT | [https://fastapi.tiangolo.com/]\(https://fastapi.tiangolo.com/\)) Tj ET
+BT /F3 7.5 Tf 54 621 Td (ASGI Server | Uvicorn | 0.54.0 | BSD-3-Clause | [https://www.uvicorn.org/]\(https://www.uvicorn.org/\)) Tj ET
+BT /F3 7.5 Tf 54 609 Td (PDF Extraction | pypdf | 7.1.0 | BSD-3-Clause | [https://pypdf.readthedocs.io/]\(https://pypdf.readthedocs) Tj ET
+BT /F3 7.5 Tf 54 597 Td (DOCX Extraction | python-docx | 1.2.0 | MIT | [https://python-docx.readthedocs.io/]\(https://python-docx.r) Tj ET
+BT /F3 7.5 Tf 54 585 Td (CSV / Tabular | pandas | 3.1.1 | BSD-3-Clause | [https://pandas.pydata.org/docs/]\(https://pandas.pydata.o) Tj ET
+BT /F3 7.5 Tf 54 573 Td (Embeddings | sentence-transformers | 6.3.0 | Apache 2.0 | [https://sbert.net/]\(https://sbert.net/\)) Tj ET
+BT /F3 7.5 Tf 54 561 Td (ML Tensor Backend | PyTorch | 2.15.0+cpu | Modified BSD | [https://pytorch.org/docs/]\(https://pytorch.org) Tj ET
+BT /F3 7.5 Tf 54 549 Td (Linear Algebra | NumPy | 2.5.4 | BSD-3-Clause | [https://numpy.org/doc/]\(https://numpy.org/doc/\)) Tj ET
+BT /F3 7.5 Tf 54 537 Td (Database | SQLite | 3.x \(Built-in\) | Public Domain | [https://www.sqlite.org/docs.html]\(https://www.sqlit) Tj ET
+BT /F3 7.5 Tf 54 525 Td (Unit Testing | pytest | 9.2.0 | MIT | [https://docs.pytest.org/]\(https://docs.pytest.org/\)) Tj ET
+BT /F3 7.5 Tf 54 513 Td (Voice Interface | Web Speech API | W3C Standard | W3C Permissive | [https://developer.mozilla.org/en-US/d) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 5 of 5  --  Technology Stack Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+13 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+14 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+15 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000139 00000 n 
+0000000288 00000 n 
+0000000437 00000 n 
+0000000587 00000 n 
+0000000737 00000 n 
+0000000887 00000 n 
+0000005919 00000 n 
+0000010369 00000 n 
+0000015014 00000 n 
+0000019305 00000 n 
+0000021511 00000 n 
+0000021582 00000 n 
+0000021658 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+21727
+%%EOF

@@ -1,0 +1,1245 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 4 0 R 5 0 R 6 0 R 7 0 R 8 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R] /Count 17 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 20 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 21 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 22 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 23 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 24 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 25 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 26 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 27 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 28 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 29 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 30 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 31 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 32 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 33 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+17 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 34 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 35 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+19 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 36 0 R /Resources << /Font << /F1 37 0 R /F2 38 0 R /F3 39 0 R >> >> >>
+endobj
+20 0 obj
+<< /Length 4063 >>
+stream
+BT /F2 16 Tf 54 730 Td (System Architecture Specification) Tj ET
+54 718 m 558 718 l S
+BT /F1 9 Tf 54 696 Td (**Project**: AI-Based Knowledge Retrieval Platform with Query Resolution System) Tj ET
+BT /F1 9 Tf 54 678 Td (**Milestone**: 1 -- System Architecture & Data Models) Tj ET
+BT /F1 9 Tf 54 660 Td (**Status**: Architectural Design Specification) Tj ET
+BT /F1 9 Tf 54 642 Td (---) Tj ET
+BT /F2 13 Tf 54 616 Td (Table of Contents) Tj ET
+BT /F2 9 Tf 54 598 Td (*) Tj ET
+BT /F1 9 Tf 68 598 Td ([System Overview & Architectural) Tj ET
+BT /F1 9 Tf 68 585 Td (Principles]\(#1-system-overview--architectural-principles\)) Tj ET
+BT /F2 9 Tf 54 569 Td (*) Tj ET
+BT /F1 9 Tf 68 569 Td ([Overall System Architecture Diagram]\(#2-overall-system-architecture-diagram\)) Tj ET
+BT /F2 9 Tf 54 553 Td (*) Tj ET
+BT /F1 9 Tf 68 553 Td ([Component Responsibilities]\(#3-component-responsibilities\)) Tj ET
+BT /F2 9 Tf 54 537 Td (*) Tj ET
+BT /F1 9 Tf 68 537 Td (3.1 Presentation Layer \(Web UI & Web Speech API\)) Tj ET
+BT /F2 9 Tf 54 521 Td (*) Tj ET
+BT /F1 9 Tf 68 521 Td (3.2 API Gateway & Backend Services \(FastAPI + Uvicorn\)) Tj ET
+BT /F2 9 Tf 54 505 Td (*) Tj ET
+BT /F1 9 Tf 68 505 Td (3.3 Knowledge Ingestion Engine \(M1.3 - Planned\)) Tj ET
+BT /F2 9 Tf 54 489 Td (*) Tj ET
+BT /F1 9 Tf 68 489 Td (3.4 Embedding & Vector Search Engine \(M1.3 / M1.4 - Planned\)) Tj ET
+BT /F2 9 Tf 54 473 Td (*) Tj ET
+BT /F1 9 Tf 68 473 Td (3.5 Persistence Layer \(SQLite & Local File Store\)) Tj ET
+BT /F2 9 Tf 54 457 Td (*) Tj ET
+BT /F1 9 Tf 68 457 Td (3.6 Evaluation & Benchmark Engine \(M1.4 - Planned\)) Tj ET
+BT /F2 9 Tf 54 441 Td (*) Tj ET
+BT /F1 9 Tf 68 441 Td ([Five-Agent System Design \(Architectural) Tj ET
+BT /F1 9 Tf 68 428 Td (Specification\)]\(#4-five-agent-system-design-architectural-specification\)) Tj ET
+BT /F2 9 Tf 54 412 Td (*) Tj ET
+BT /F1 9 Tf 68 412 Td (4.1 Query Understanding Agent \(QUA\)) Tj ET
+BT /F2 9 Tf 54 396 Td (*) Tj ET
+BT /F1 9 Tf 68 396 Td (4.2 Retrieval Agent \(RA\)) Tj ET
+BT /F2 9 Tf 54 380 Td (*) Tj ET
+BT /F1 9 Tf 68 380 Td (4.3 Response Generation Agent \(RGA\)) Tj ET
+BT /F2 9 Tf 54 364 Td (*) Tj ET
+BT /F1 9 Tf 68 364 Td (4.4 Clarification Agent \(CA\)) Tj ET
+BT /F2 9 Tf 54 348 Td (*) Tj ET
+BT /F1 9 Tf 68 348 Td (4.5 Conversation Memory Agent \(CMA\)) Tj ET
+BT /F2 9 Tf 54 332 Td (*) Tj ET
+BT /F1 9 Tf 68 332 Td ([Multi-Agent Orchestration & Information) Tj ET
+BT /F1 9 Tf 68 319 Td (Flow]\(#5-multi-agent-orchestration--information-flow\)) Tj ET
+BT /F2 9 Tf 54 303 Td (*) Tj ET
+BT /F1 9 Tf 68 303 Td (5.1 Orchestration Logic & Conditional Routing) Tj ET
+BT /F2 9 Tf 54 287 Td (*) Tj ET
+BT /F1 9 Tf 68 287 Td (5.2 Multi-Agent Execution Sequence Diagram) Tj ET
+BT /F2 9 Tf 54 271 Td (*) Tj ET
+BT /F1 9 Tf 68 271 Td (5.3 Agent Communication Contracts) Tj ET
+BT /F2 9 Tf 54 255 Td (*) Tj ET
+BT /F1 9 Tf 68 255 Td ([End-to-End Data Flow Diagrams]\(#6-end-to-end-data-flow-diagrams\)) Tj ET
+BT /F2 9 Tf 54 239 Td (*) Tj ET
+BT /F1 9 Tf 68 239 Td (6.1 Document Ingestion Data Flow) Tj ET
+BT /F2 9 Tf 54 223 Td (*) Tj ET
+BT /F1 9 Tf 68 223 Td (6.2 RAG Retrieval Data Flow) Tj ET
+BT /F2 9 Tf 54 207 Td (*) Tj ET
+BT /F1 9 Tf 68 207 Td ([Milestone 1 Implementation Boundaries vs Future) Tj ET
+BT /F1 9 Tf 68 194 Td (Milestones]\(#7-milestone-1-implementation-boundaries-vs-future-milestones\)) Tj ET
+BT /F1 9 Tf 54 178 Td (---) Tj ET
+BT /F2 13 Tf 54 152 Td (1. System Overview & Architectural Principles) Tj ET
+BT /F1 9 Tf 54 134 Td (The **AI-Based Knowledge Retrieval Platform with Query Resolution System** is an) Tj ET
+BT /F1 9 Tf 54 121 Td (enterprise-grade, retrieval-augmented intelligence platform. Its proposed objective is) Tj ET
+BT /F1 9 Tf 54 108 Td (to ingest heterogeneous corporate and technical documents \(PDF, DOCX, TXT, CSV\),) Tj ET
+BT /F1 9 Tf 54 95 Td (construct semantic vector representations, and provide accurate, cited answers to) Tj ET
+BT /F1 9 Tf 54 82 Td (complex user inquiries through multi-agent orchestration.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 1 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+21 0 obj
+<< /Length 4818 >>
+stream
+BT /F1 9 Tf 54 730 Td (Within Milestone 1, M1.1 \(Research\), M1.2 \(System Architecture and Data Models\), M1.3) Tj ET
+BT /F1 9 Tf 54 717 Td (\(Knowledge Base Ingestion\), and M1.4 \(Semantic Retrieval Pipeline & Benchmark\) are) Tj ET
+BT /F1 9 Tf 54 704 Td (implemented and empirically verified. The five agents, LLM answer generation, and voice) Tj ET
+BT /F1 9 Tf 54 691 Td (runtime execution are thoroughly designed and specified here, while their programmatic) Tj ET
+BT /F1 9 Tf 54 678 Td (implementation is deferred to Milestone 2.) Tj ET
+BT /F2 11 Tf 54 654 Td (Core Architectural Principles) Tj ET
+BT /F2 9 Tf 54 638 Td (*) Tj ET
+BT /F1 9 Tf 68 638 Td (**Modularity & Loose Coupling**: Each architectural component \(document ingestion,) Tj ET
+BT /F1 9 Tf 68 625 Td (embedding generation, vector similarity search, persistence, and multi-agent) Tj ET
+BT /F1 9 Tf 68 612 Td (coordination\) is isolated behind clean interfaces. Components can be enhanced or) Tj ET
+BT /F1 9 Tf 68 599 Td (replaced independently without breaking adjacent layers.) Tj ET
+BT /F2 9 Tf 54 583 Td (*) Tj ET
+BT /F1 9 Tf 68 583 Td (**Beginner-Friendly Transparency**: Rather than burying vector operations inside) Tj ET
+BT /F1 9 Tf 68 570 Td (opaque remote cloud databases, vector calculations \(NumPy dot-product Cosine) Tj ET
+BT /F1 9 Tf 68 557 Td (Similarity\) are directly observable, educational, and locally verifiable.) Tj ET
+BT /F2 9 Tf 54 541 Td (*) Tj ET
+BT /F1 9 Tf 68 541 Td (**Decoupled Agent Responsibilities**: Complex query resolution is partitioned into) Tj ET
+BT /F1 9 Tf 68 528 Td (five specialized agents with strict message contracts, preventing prompt bloat and) Tj ET
+BT /F1 9 Tf 68 515 Td (catastrophic forgetting.) Tj ET
+BT /F2 9 Tf 54 499 Td (*) Tj ET
+BT /F1 9 Tf 68 499 Td (**Verifiable Grounding & Citation**: Grounded prompt design and explicit source) Tj ET
+BT /F1 9 Tf 68 486 Td (citations are fundamental architectural design goals and safeguards against) Tj ET
+BT /F1 9 Tf 68 473 Td (ungrounded hallucinations, requiring that every asserted fact in downstream) Tj ET
+BT /F1 9 Tf 68 460 Td (milestones is backed by traceable source chunks with calculated similarity scores) Tj ET
+BT /F1 9 Tf 68 447 Td (and exact file attributions.) Tj ET
+BT /F2 9 Tf 54 431 Td (*) Tj ET
+BT /F1 9 Tf 68 431 Td (**Strict Milestone 1 Bounding**: Within Milestone 1, M1.1 through M1.4 are completed) Tj ET
+BT /F1 9 Tf 68 418 Td (and tested. The five agents, LLM response generation, and voice runtime execution) Tj ET
+BT /F1 9 Tf 68 405 Td (are thoroughly designed and specified here, while their runtime implementation is) Tj ET
+BT /F1 9 Tf 68 392 Td (strictly reserved for Milestone 2.) Tj ET
+BT /F1 9 Tf 54 376 Td (---) Tj ET
+BT /F2 13 Tf 54 350 Td (2. Overall System Architecture Diagram) Tj ET
+BT /F1 9 Tf 54 332 Td (The diagram below illustrates the proposed end-to-end architecture across all tiers:) Tj ET
+BT /F1 9 Tf 54 319 Td (presentation, API routing, processing engines, multi-agent orchestration, and persistent) Tj ET
+BT /F1 9 Tf 54 306 Td (storage.) Tj ET
+BT /F3 7.5 Tf 64 288 Td (flowchart TD) Tj ET
+BT /F3 7.5 Tf 64 278 Td (    subgraph Presentation["Presentation Tier \(Browser Client\)"]) Tj ET
+BT /F3 7.5 Tf 64 268 Td (        UI["Web Interface \(HTML5, CSS3, Modern JS\)"]) Tj ET
+BT /F3 7.5 Tf 64 258 Td (        STT["Web Speech STT \(SpeechRecognition - Future M2 Runtime\)"]) Tj ET
+BT /F3 7.5 Tf 64 248 Td (        TTS["Web Speech TTS \(SpeechSynthesis - Future M2 Runtime\)"]) Tj ET
+BT /F3 7.5 Tf 64 238 Td (        UI <--> STT) Tj ET
+BT /F3 7.5 Tf 64 228 Td (        UI <--> TTS) Tj ET
+BT /F3 7.5 Tf 64 218 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 208 Td (    subgraph APILayer["Backend API Gateway \(FastAPI + Uvicorn\)"]) Tj ET
+BT /F3 7.5 Tf 64 198 Td (        Router["FastAPI Router"]) Tj ET
+BT /F3 7.5 Tf 64 188 Td (        UploadEP["/api/documents/upload"]) Tj ET
+BT /F3 7.5 Tf 64 178 Td (        QueryEP["/api/query/retrieve"]) Tj ET
+BT /F3 7.5 Tf 64 168 Td (        StatusEP["/api/documents/status"]) Tj ET
+BT /F3 7.5 Tf 64 158 Td (        Router --> UploadEP) Tj ET
+BT /F3 7.5 Tf 64 148 Td (        Router --> QueryEP) Tj ET
+BT /F3 7.5 Tf 64 138 Td (        Router --> StatusEP) Tj ET
+BT /F3 7.5 Tf 64 128 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 118 Td (    subgraph IngestionEngine["Knowledge Ingestion Engine \(M1.3 - Planned\)"]) Tj ET
+BT /F3 7.5 Tf 64 108 Td (        Parser["Document Extractors \(PDF, DOCX, TXT, CSV\)"]) Tj ET
+BT /F3 7.5 Tf 64 98 Td (        Cleaner["Text Cleaner & Normalizer"]) Tj ET
+BT /F3 7.5 Tf 64 88 Td (        Chunker["Sentence-Aware Sliding Chunker"]) Tj ET
+BT /F3 7.5 Tf 64 78 Td (        Parser --> Cleaner --> Chunker) Tj ET
+BT /F3 7.5 Tf 64 68 Td (    end) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 2 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+22 0 obj
+<< /Length 4552 >>
+stream
+BT /F3 7.5 Tf 64 730 Td (    subgraph EmbeddingEngine["Vector & Embedding Engine \(M1.3 / M1.4 - Planned\)"]) Tj ET
+BT /F3 7.5 Tf 64 720 Td (        Embedder["Sentence-Transformers \(all-MiniLM-L6-v2\)"]) Tj ET
+BT /F3 7.5 Tf 64 710 Td (        VectorIndex["In-Memory NumPy Vector Matrix \(Cosine Similarity Search\)"]) Tj ET
+BT /F3 7.5 Tf 64 700 Td (        Embedder --> VectorIndex) Tj ET
+BT /F3 7.5 Tf 64 690 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 680 Td (    subgraph MultiAgentSystem["5-Agent Orchestration Tier \(M1.2 Design-Only - Future M2 Implementati) Tj ET
+BT /F3 7.5 Tf 64 670 Td (        QUA["1. Query Understanding Agent"]) Tj ET
+BT /F3 7.5 Tf 64 660 Td (        RA["2. Retrieval Agent"]) Tj ET
+BT /F3 7.5 Tf 64 650 Td (        RGA["3. Response Generation Agent"]) Tj ET
+BT /F3 7.5 Tf 64 640 Td (        CA["4. Clarification Agent"]) Tj ET
+BT /F3 7.5 Tf 64 630 Td (        CMA["5. Conversation Memory Agent"]) Tj ET
+BT /F3 7.5 Tf 64 620 Td (        QUA -->|"High Ambiguity"| CA) Tj ET
+BT /F3 7.5 Tf 64 610 Td (        QUA -->|"Clear Query"| RA) Tj ET
+BT /F3 7.5 Tf 64 600 Td (        RA -->|"Context Chunks"| RGA) Tj ET
+BT /F3 7.5 Tf 64 590 Td (        RA -.->|"Competing Entities / Ambiguity"| CA) Tj ET
+BT /F3 7.5 Tf 64 580 Td (        CMA <-->|"Session History"| QUA) Tj ET
+BT /F3 7.5 Tf 64 570 Td (        CMA <-->|"Conversation State"| RGA) Tj ET
+BT /F3 7.5 Tf 64 560 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 550 Td (    subgraph StorageLayer["Persistence Tier"]) Tj ET
+BT /F3 7.5 Tf 64 540 Td (        SQLiteDB[\("SQLite 3 Database \(Metadata, Chunks & Embeddings\)"\)]) Tj ET
+BT /F3 7.5 Tf 64 530 Td (        DiskStore[\("Local File Storage \(Raw Uploaded Documents\)"\)]) Tj ET
+BT /F3 7.5 Tf 64 520 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 510 Td (    subgraph EvaluationEngine["Evaluation & Benchmarking Engine \(M1.4 - Planned\)"]) Tj ET
+BT /F3 7.5 Tf 64 500 Td (        QueryRunner["Automated Benchmark Runner"]) Tj ET
+BT /F3 7.5 Tf 64 490 Td (        Metrics["Top-1, Top-3, Top-5 Accuracy Calculator"]) Tj ET
+BT /F3 7.5 Tf 64 480 Td (        ResultsCSV[\("evaluation_results.csv"\)]) Tj ET
+BT /F3 7.5 Tf 64 470 Td (        QueryRunner --> Metrics --> ResultsCSV) Tj ET
+BT /F3 7.5 Tf 64 460 Td (    end) Tj ET
+BT /F3 7.5 Tf 64 450 Td (    %% Connections) Tj ET
+BT /F3 7.5 Tf 64 440 Td (    UI <-->|"HTTP / REST API"| Router) Tj ET
+BT /F3 7.5 Tf 64 430 Td (    UploadEP --> DiskStore) Tj ET
+BT /F3 7.5 Tf 64 420 Td (    UploadEP --> Parser) Tj ET
+BT /F3 7.5 Tf 64 410 Td (    Chunker --> Embedder) Tj ET
+BT /F3 7.5 Tf 64 400 Td (    Chunker --> SQLiteDB) Tj ET
+BT /F3 7.5 Tf 64 390 Td (    Embedder -->|"Persist Vector BLOBs"| SQLiteDB) Tj ET
+BT /F3 7.5 Tf 64 380 Td (    Embedder -->|"Populate Matrix"| VectorIndex) Tj ET
+BT /F3 7.5 Tf 64 370 Td (    QueryEP --> QUA) Tj ET
+BT /F3 7.5 Tf 64 360 Td (    QueryEP -->|"Direct M1 Mode"| RA) Tj ET
+BT /F3 7.5 Tf 64 350 Td (    RA <--> VectorIndex) Tj ET
+BT /F3 7.5 Tf 64 340 Td (    RA <--> SQLiteDB) Tj ET
+BT /F3 7.5 Tf 64 330 Td (    QueryRunner --> QueryEP) Tj ET
+BT /F1 9 Tf 54 320 Td (---) Tj ET
+BT /F2 13 Tf 54 294 Td (3. Component Responsibilities) Tj ET
+BT /F1 9 Tf 54 276 Td (The proposed system architecture is organized into six core functional components. Their) Tj ET
+BT /F1 9 Tf 54 263 Td (responsibilities within the architecture are defined below, clearly distinguishing) Tj ET
+BT /F1 9 Tf 54 250 Td (proposed designs from planned and future implementation tasks:) Tj ET
+BT /F2 11 Tf 54 226 Td (3.1 Presentation Layer \(Web UI & Web Speech API\)) Tj ET
+BT /F2 9 Tf 54 210 Td (*) Tj ET
+BT /F1 9 Tf 68 210 Td (**Document Management Interface \(Proposed Design\)**: Designed to provide file) Tj ET
+BT /F1 9 Tf 68 197 Td (selection and upload for PDF, DOCX, TXT, and CSV formats with ingestion status) Tj ET
+BT /F1 9 Tf 68 184 Td (indicators.) Tj ET
+BT /F2 9 Tf 54 168 Td (*) Tj ET
+BT /F1 9 Tf 68 168 Td (**Query Resolution Interface \(Proposed Design\)**: Designed to offer a clean search) Tj ET
+BT /F1 9 Tf 68 155 Td (bar with real-time feedback, displaying retrieved chunks, similarity percentages,) Tj ET
+BT /F1 9 Tf 68 142 Td (and source file metadata.) Tj ET
+BT /F2 9 Tf 54 126 Td (*) Tj ET
+BT /F1 9 Tf 68 126 Td (**Voice Interface \(Proposed Design -- Future M2 Implementation\)**:) Tj ET
+BT /F2 9 Tf 54 110 Td (*) Tj ET
+BT /F1 9 Tf 68 110 Td (`SpeechRecognition`: Designed to enable hands-free query dictation directly in) Tj ET
+BT /F1 9 Tf 68 97 Td (modern browsers.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 3 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+23 0 obj
+<< /Length 4957 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (`SpeechSynthesis`: Designed to provide optional voice playback of platform) Tj ET
+BT /F1 9 Tf 68 717 Td (responses.) Tj ET
+BT /F2 9 Tf 54 701 Td (*) Tj ET
+BT /F1 9 Tf 68 701 Td (**Graceful Degradation \(Proposed Design\)**: Designed such that if browser microphone) Tj ET
+BT /F1 9 Tf 68 688 Td (permissions are blocked or unsupported, the UI defaults seamlessly to standard) Tj ET
+BT /F1 9 Tf 68 675 Td (keyboard input without throwing unhandled exceptions.) Tj ET
+BT /F2 11 Tf 54 653 Td (3.2 API Gateway & Backend Services \(FastAPI + Uvicorn\)) Tj ET
+BT /F2 9 Tf 54 637 Td (*) Tj ET
+BT /F1 9 Tf 68 637 Td (**Routing & Endpoint Management \(Proposed Design\)**: Designed to dispatch client) Tj ET
+BT /F1 9 Tf 68 624 Td (requests to the appropriate ingestion or retrieval handlers.) Tj ET
+BT /F2 9 Tf 54 608 Td (*) Tj ET
+BT /F1 9 Tf 68 608 Td (**Pydantic Validation \(Proposed Design\)**: Designed to validate all incoming) Tj ET
+BT /F1 9 Tf 68 595 Td (payloads and query parameters against strongly-typed schemas before execution.) Tj ET
+BT /F2 9 Tf 54 579 Td (*) Tj ET
+BT /F1 9 Tf 68 579 Td (**Asynchronous Execution \(Proposed Design\)**: Designed to use Python `async` event) Tj ET
+BT /F1 9 Tf 68 566 Td (loops to prevent long-running file parsing tasks from blocking retrieval queries.) Tj ET
+BT /F2 9 Tf 54 550 Td (*) Tj ET
+BT /F1 9 Tf 68 550 Td (**Interactive Documentation \(Proposed Design\)**: Designed to auto-generate OpenAPI /) Tj ET
+BT /F1 9 Tf 68 537 Td (Swagger interactive documentation at `/docs` for testing once endpoints are) Tj ET
+BT /F1 9 Tf 68 524 Td (registered.) Tj ET
+BT /F2 11 Tf 54 502 Td (3.3 Knowledge Ingestion Engine \(M1.3  -  Planned\)) Tj ET
+BT /F2 9 Tf 54 486 Td (*) Tj ET
+BT /F1 9 Tf 68 486 Td (**Document Extractors \(Planned Implementation\)**:) Tj ET
+BT /F2 9 Tf 54 470 Td (*) Tj ET
+BT /F1 9 Tf 68 470 Td (`pypdf`: To extract raw text from binary PDF pages.) Tj ET
+BT /F2 9 Tf 54 454 Td (*) Tj ET
+BT /F1 9 Tf 68 454 Td (`python-docx`: To extract text from Word documents, preserving paragraph and table) Tj ET
+BT /F1 9 Tf 68 441 Td (content.) Tj ET
+BT /F2 9 Tf 54 425 Td (*) Tj ET
+BT /F1 9 Tf 68 425 Td (`pandas`: To read CSV tables, serializing tabular records into descriptive semantic) Tj ET
+BT /F1 9 Tf 68 412 Td (sentences.) Tj ET
+BT /F2 9 Tf 54 396 Td (*) Tj ET
+BT /F1 9 Tf 68 396 Td (Native Python file reader: To ingest plain text with a multi-encoding fallback order) Tj ET
+BT /F1 9 Tf 68 383 Td (of `UTF-8` $\\rightarrow$ `CP1252` $\\rightarrow$ `Latin-1`. Latin-1 \(ISO-8859-1\) is) Tj ET
+BT /F1 9 Tf 68 370 Td (placed as the final fallback because its byte map assigns a valid character to every) Tj ET
+BT /F1 9 Tf 68 357 Td (byte value from `0x00` to `0xFF`; placing Latin-1 earlier would cause it to decode) Tj ET
+BT /F1 9 Tf 68 344 Td (almost any byte sequence without throwing a `UnicodeDecodeError`, preventing) Tj ET
+BT /F1 9 Tf 68 331 Td (detection of Windows-1252 \(CP1252\) specific characters \(such as smart quotes and) Tj ET
+BT /F1 9 Tf 68 318 Td (en-dashes\).) Tj ET
+BT /F2 9 Tf 54 302 Td (*) Tj ET
+BT /F1 9 Tf 68 302 Td (**Text Cleaner & Normalizer \(Planned Implementation\)**: Designed to strip) Tj ET
+BT /F1 9 Tf 68 289 Td (non-printable control characters, normalize Unicode accents, collapse redundant) Tj ET
+BT /F1 9 Tf 68 276 Td (whitespace, and clean broken hyphens.) Tj ET
+BT /F2 9 Tf 54 260 Td (*) Tj ET
+BT /F1 9 Tf 68 260 Td (**Sliding-Window Chunker \(Planned Implementation\)**: Designed to segment cleaned) Tj ET
+BT /F1 9 Tf 68 247 Td (text into chunks using a proposed configurable default chunk size of 400 characters) Tj ET
+BT /F1 9 Tf 68 234 Td (\(within a configurable range of 300 to 500 characters\) and a proposed configurable) Tj ET
+BT /F1 9 Tf 68 221 Td (default overlap of 80 characters \(within a configurable range of 50 to 100) Tj ET
+BT /F1 9 Tf 68 208 Td (characters\) to ensure conceptual continuity across segment boundaries. These default) Tj ET
+BT /F1 9 Tf 68 195 Td (values serve as initial design baselines to be evaluated in M1.3.) Tj ET
+BT /F2 11 Tf 54 173 Td (3.4 Embedding & Vector Search Engine \(M1.3 / M1.4  -  Planned\)) Tj ET
+BT /F2 9 Tf 54 157 Td (*) Tj ET
+BT /F1 9 Tf 68 157 Td (**Dense Embedder \(Planned Implementation\)**: Designed to convert cleaned text chunks) Tj ET
+BT /F1 9 Tf 68 144 Td (into 384-dimensional dense vectors using the local `all-MiniLM-L6-v2` transformer) Tj ET
+BT /F1 9 Tf 68 131 Td (model.) Tj ET
+BT /F2 9 Tf 54 115 Td (*) Tj ET
+BT /F1 9 Tf 68 115 Td (**Dual Vector Storage & Search \(Planned Implementation\)**:) Tj ET
+BT /F2 9 Tf 54 99 Td (*) Tj ET
+BT /F1 9 Tf 68 99 Td (**Persistent Relational Storage**: Serializes 384-dimensional vectors as 1536-byte) Tj ET
+BT /F1 9 Tf 68 86 Td (binary BLOBs in the SQLite `embeddings` table for durable persistence.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 4 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+24 0 obj
+<< /Length 4877 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (**In-Memory Search Matrix**: Projects active vectors into an in-memory 2D NumPy) Tj ET
+BT /F1 9 Tf 68 717 Td (array for high-speed linear algebra search \($S = Q \\cdot D^T$\).) Tj ET
+BT /F2 9 Tf 54 701 Td (*) Tj ET
+BT /F1 9 Tf 68 701 Td (**Similarity Search \(Planned Implementation\)**: Designed to execute matrix) Tj ET
+BT /F1 9 Tf 68 688 Td (dot-product multiplication against query vectors to compute exact Cosine Similarity.) Tj ET
+BT /F2 9 Tf 54 672 Td (*) Tj ET
+BT /F1 9 Tf 68 672 Td (**Relevance Filtering \(Planned Implementation\)**: Designed to apply a configurable) Tj ET
+BT /F1 9 Tf 68 659 Td (similarity threshold \(`similarity_threshold`\) to filter out irrelevant or) Tj ET
+BT /F1 9 Tf 68 646 Td (out-of-domain queries.) Tj ET
+BT /F2 11 Tf 54 624 Td (3.5 Persistence Layer \(SQLite & Local File Store\)) Tj ET
+BT /F2 9 Tf 54 608 Td (*) Tj ET
+BT /F1 9 Tf 68 608 Td (**Local File Store \(Proposed Design\)**: Designed to retain original uploaded files) Tj ET
+BT /F1 9 Tf 68 595 Td (in structured folders \(`sample_documents/` or `uploads/`\) for auditability and raw) Tj ET
+BT /F1 9 Tf 68 582 Td (file inspection.) Tj ET
+BT /F2 9 Tf 54 566 Td (*) Tj ET
+BT /F1 9 Tf 68 566 Td (**SQLite 3 Database \(Proposed Design\)**: Designed to persist relational data models:) Tj ET
+BT /F2 9 Tf 54 550 Td (*) Tj ET
+BT /F1 9 Tf 68 550 Td (Document records \(filename, file type, file size, upload timestamp, chunk count\).) Tj ET
+BT /F2 9 Tf 54 534 Td (*) Tj ET
+BT /F1 9 Tf 68 534 Td (Chunk records \(chunk ID, document foreign key, chunk index, cleaned and normalized) Tj ET
+BT /F1 9 Tf 68 521 Td (text content, character count\).) Tj ET
+BT /F2 9 Tf 54 505 Td (*) Tj ET
+BT /F1 9 Tf 68 505 Td (Embedding records \(embedding ID, chunk foreign key, model name, dimension, binary) Tj ET
+BT /F1 9 Tf 68 492 Td (vector BLOB\).) Tj ET
+BT /F2 9 Tf 54 476 Td (*) Tj ET
+BT /F1 9 Tf 68 476 Td (Query records and retrieval audit logs.) Tj ET
+BT /F2 11 Tf 54 454 Td (3.6 Evaluation & Benchmark Engine \(M1.4  -  Planned\)) Tj ET
+BT /F2 9 Tf 54 438 Td (*) Tj ET
+BT /F1 9 Tf 68 438 Td (**Ground-Truth Dataset \(Planned Implementation\)**: Designed to manage test suites) Tj ET
+BT /F1 9 Tf 68 425 Td (categorized across Factual, Procedural, Comparative, and Unavailable information) Tj ET
+BT /F1 9 Tf 68 412 Td (queries.) Tj ET
+BT /F2 9 Tf 54 396 Td (*) Tj ET
+BT /F1 9 Tf 68 396 Td (**Automated Runner \(Planned Implementation\)**: Designed to execute benchmark queries) Tj ET
+BT /F1 9 Tf 68 383 Td (against the retrieval engine.) Tj ET
+BT /F2 9 Tf 54 367 Td (*) Tj ET
+BT /F1 9 Tf 68 367 Td (**Metric Computation \(Planned Implementation\)**: Designed to calculate Top-1, Top-3,) Tj ET
+BT /F1 9 Tf 68 354 Td (and Top-5 retrieval accuracy percentages, logging raw scores to) Tj ET
+BT /F1 9 Tf 68 341 Td (`evaluation/evaluation_results.csv`.) Tj ET
+BT /F1 9 Tf 54 325 Td (---) Tj ET
+BT /F2 13 Tf 54 299 Td (4. Five-Agent System Design \(Architectural Specification\)) Tj ET
+BT /F1 9 Tf 54 281 Td (In complex query resolution, asking a single model to parse intent, search vector) Tj ET
+BT /F1 9 Tf 54 268 Td (databases, detect ambiguities, track multi-turn memory, and write answers causes) Tj ET
+BT /F1 9 Tf 54 255 Td (confusion and hallucinations. The proposed platform partitions these responsibilities) Tj ET
+BT /F1 9 Tf 54 242 Td (into **five specialized agents**.) Tj ET
+BT /F1 9 Tf 54 224 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 206 Td (In Milestone 1, these five agents are **design specifications only**. They are not) Tj ET
+BT /F1 9 Tf 54 193 Td (programmatically implemented or running in Milestone 1. Their programmatic LLM execution) Tj ET
+BT /F1 9 Tf 54 180 Td (logic is scheduled for implementation in Milestone 2.) Tj ET
+BT /F3 7.5 Tf 64 162 Td (+                                                                             +) Tj ET
+BT /F3 7.5 Tf 64 152 Td (|                         THE 5 SPECIALIZED AGENTS                            |) Tj ET
+BT /F3 7.5 Tf 64 142 Td (+                                                                             +) Tj ET
+BT /F3 7.5 Tf 64 132 Td (| 1. Query Understanding Agent      Intent, entities, query rewrite/expansion |) Tj ET
+BT /F3 7.5 Tf 64 122 Td (| 2. Retrieval Agent                Semantic search, thresholding, re-ranking |) Tj ET
+BT /F3 7.5 Tf 64 112 Td (| 3. Response Generation Agent      Grounded answer synthesis with citations  |) Tj ET
+BT /F3 7.5 Tf 64 102 Td (| 4. Clarification Agent            Ambiguity detection, follow-up questions  |) Tj ET
+BT /F3 7.5 Tf 64 92 Td (| 5. Conversation Memory Agent      Multi-turn session context & history      |) Tj ET
+BT /F3 7.5 Tf 64 82 Td (+                                                                             +) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 5 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+25 0 obj
+<< /Length 4285 >>
+stream
+BT /F1 9 Tf 54 730 Td (---) Tj ET
+BT /F2 11 Tf 54 706 Td (4.1 Query Understanding Agent \(QUA\)) Tj ET
+BT /F2 9 Tf 54 690 Td (*) Tj ET
+BT /F1 9 Tf 68 690 Td (**Purpose**: Acts as the analytical front door of the query resolution pipeline,) Tj ET
+BT /F1 9 Tf 68 677 Td (interpreting user intent and structuring queries for downstream retrieval.) Tj ET
+BT /F2 9 Tf 54 661 Td (*) Tj ET
+BT /F1 9 Tf 68 661 Td (**Responsibilities**:) Tj ET
+BT /F2 9 Tf 54 645 Td (*) Tj ET
+BT /F1 9 Tf 68 645 Td (Classify query intent into standard categories \(`FACTUAL`, `PROCEDURAL`,) Tj ET
+BT /F1 9 Tf 68 632 Td (`COMPARATIVE`, `AMBIGUOUS`\).) Tj ET
+BT /F2 9 Tf 54 616 Td (*) Tj ET
+BT /F1 9 Tf 68 616 Td (Extract domain entities \(technical terms, system names, error codes, version) Tj ET
+BT /F1 9 Tf 68 603 Td (numbers\).) Tj ET
+BT /F2 9 Tf 54 587 Td (*) Tj ET
+BT /F1 9 Tf 68 587 Td (Rewrite and expand raw user queries into search-optimized phrasing.) Tj ET
+BT /F2 9 Tf 54 571 Td (*) Tj ET
+BT /F1 9 Tf 68 571 Td (Compute an ambiguity score \($0.0$ to $1.0$\) to determine if clarification is) Tj ET
+BT /F1 9 Tf 68 558 Td (required before retrieval.) Tj ET
+BT /F2 9 Tf 54 542 Td (*) Tj ET
+BT /F1 9 Tf 68 542 Td (**Expected Input**:) Tj ET
+BT /F2 9 Tf 54 526 Td (*) Tj ET
+BT /F1 9 Tf 68 526 Td (`raw_query`: Raw query string submitted by the user.) Tj ET
+BT /F2 9 Tf 54 510 Td (*) Tj ET
+BT /F1 9 Tf 68 510 Td (`session_history`: Prior conversation turns from the Conversation Memory Agent.) Tj ET
+BT /F2 9 Tf 54 494 Td (*) Tj ET
+BT /F1 9 Tf 68 494 Td (**Expected Output**:) Tj ET
+BT /F2 9 Tf 54 478 Td (*) Tj ET
+BT /F1 9 Tf 68 478 Td (`intent`: Intent classification string.) Tj ET
+BT /F2 9 Tf 54 462 Td (*) Tj ET
+BT /F1 9 Tf 68 462 Td (`entities`: List of extracted entity strings.) Tj ET
+BT /F2 9 Tf 54 446 Td (*) Tj ET
+BT /F1 9 Tf 68 446 Td (`rewritten_query`: Expanded search query string.) Tj ET
+BT /F2 9 Tf 54 430 Td (*) Tj ET
+BT /F1 9 Tf 68 430 Td (`ambiguity_score`: Float between $0.0$ and $1.0$.) Tj ET
+BT /F2 9 Tf 54 414 Td (*) Tj ET
+BT /F1 9 Tf 68 414 Td (`requires_clarification`: Boolean flag \(`true` if ambiguity $\\ge 0.50$\).) Tj ET
+BT /F2 9 Tf 54 398 Td (*) Tj ET
+BT /F1 9 Tf 68 398 Td (**Interaction with Other Agents**:) Tj ET
+BT /F2 9 Tf 54 382 Td (*) Tj ET
+BT /F1 9 Tf 68 382 Td (Receives prior context from Conversation Memory Agent.) Tj ET
+BT /F2 9 Tf 54 366 Td (*) Tj ET
+BT /F1 9 Tf 68 366 Td (Passes rewritten query to Retrieval Agent if query is clear \(`ambiguity_score <) Tj ET
+BT /F1 9 Tf 68 353 Td (0.50`\).) Tj ET
+BT /F2 9 Tf 54 337 Td (*) Tj ET
+BT /F1 9 Tf 68 337 Td (Routes query to Clarification Agent if ambiguous \(`ambiguity_score >= 0.50`\).) Tj ET
+BT /F2 9 Tf 54 321 Td (*) Tj ET
+BT /F1 9 Tf 68 321 Td (**Position in the Proposed Workflow**: First reasoning step in the query resolution) Tj ET
+BT /F1 9 Tf 68 308 Td (sequence following session context retrieval.) Tj ET
+BT /F2 9.5 Tf 54 288 Td (Input / Output Contract) Tj ET
+BT /F1 9 Tf 54 274 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 256 Td (**Illustrative Synthetic Example**: The JSON payload below is an illustrative, synthetic) Tj ET
+BT /F1 9 Tf 54 243 Td (design contract specified for architectural planning. Values and metrics are design) Tj ET
+BT /F1 9 Tf 54 230 Td (examples, not measured or runtime results.) Tj ET
+BT /F3 7.5 Tf 64 212 Td ({) Tj ET
+BT /F3 7.5 Tf 64 202 Td (  "agent": "QueryUnderstandingAgent",) Tj ET
+BT /F3 7.5 Tf 64 192 Td (  "input": {) Tj ET
+BT /F3 7.5 Tf 64 182 Td (    "raw_query": "What are the server restart steps after power outage?",) Tj ET
+BT /F3 7.5 Tf 64 172 Td (    "session_history": []) Tj ET
+BT /F3 7.5 Tf 64 162 Td (  },) Tj ET
+BT /F3 7.5 Tf 64 152 Td (  "output": {) Tj ET
+BT /F3 7.5 Tf 64 142 Td (    "intent": "PROCEDURAL",) Tj ET
+BT /F3 7.5 Tf 64 132 Td (    "entities": [) Tj ET
+BT /F3 7.5 Tf 64 122 Td (      "server",) Tj ET
+BT /F3 7.5 Tf 64 112 Td (      "restart steps",) Tj ET
+BT /F3 7.5 Tf 64 102 Td (      "power outage") Tj ET
+BT /F3 7.5 Tf 64 92 Td (    ],) Tj ET
+BT /F3 7.5 Tf 64 82 Td (    "rewritten_query": "Standard operating procedure for server restart sequence following a power o) Tj ET
+BT /F3 7.5 Tf 64 72 Td (    "ambiguity_score": 0.1,) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 6 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+26 0 obj
+<< /Length 4362 >>
+stream
+BT /F3 7.5 Tf 64 730 Td (    "requires_clarification": false) Tj ET
+BT /F3 7.5 Tf 64 720 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 710 Td (}) Tj ET
+BT /F1 9 Tf 54 700 Td (---) Tj ET
+BT /F2 11 Tf 54 676 Td (4.2 Retrieval Agent \(RA\)) Tj ET
+BT /F2 9 Tf 54 660 Td (*) Tj ET
+BT /F1 9 Tf 68 660 Td (**Purpose**: Knowledge-gathering coordinator that queries indexed document vectors) Tj ET
+BT /F1 9 Tf 68 647 Td (and retrieves the most semantically relevant text chunks.) Tj ET
+BT /F2 9 Tf 54 631 Td (*) Tj ET
+BT /F1 9 Tf 68 631 Td (**Responsibilities**:) Tj ET
+BT /F2 9 Tf 54 615 Td (*) Tj ET
+BT /F1 9 Tf 68 615 Td (Generate query embeddings using `all-MiniLM-L6-v2`.) Tj ET
+BT /F2 9 Tf 54 599 Td (*) Tj ET
+BT /F1 9 Tf 68 599 Td (Calculate cosine similarity scores against indexed chunk vectors.) Tj ET
+BT /F2 9 Tf 54 583 Td (*) Tj ET
+BT /F1 9 Tf 68 583 Td (Apply configurable similarity threshold filtering \(`similarity_threshold`, with a) Tj ET
+BT /F1 9 Tf 68 570 Td (proposed initial baseline of `0.35` to be evaluated during M1.4\) to eliminate) Tj ET
+BT /F1 9 Tf 68 557 Td (irrelevant context.) Tj ET
+BT /F2 9 Tf 54 541 Td (*) Tj ET
+BT /F1 9 Tf 68 541 Td (Rank chunks in descending order and select Top-$K$ \(e.g. $K=3$ or $5$\).) Tj ET
+BT /F2 9 Tf 54 525 Td (*) Tj ET
+BT /F1 9 Tf 68 525 Td (Fetch cleaned chunk text and metadata from the SQLite persistence store.) Tj ET
+BT /F2 9 Tf 54 509 Td (*) Tj ET
+BT /F1 9 Tf 68 509 Td (Deduplicate adjacent overlapping sliding-window chunks.) Tj ET
+BT /F2 9 Tf 54 493 Td (*) Tj ET
+BT /F1 9 Tf 68 493 Td (Evaluate retrieval context: if `max_similarity_score < similarity_threshold`, flag) Tj ET
+BT /F1 9 Tf 68 480 Td (`has_sufficient_context = false`.) Tj ET
+BT /F2 9 Tf 54 464 Td (*) Tj ET
+BT /F1 9 Tf 68 464 Td (**Expected Input**:) Tj ET
+BT /F2 9 Tf 54 448 Td (*) Tj ET
+BT /F1 9 Tf 68 448 Td (`search_query`: Rewritten query string from Query Understanding Agent.) Tj ET
+BT /F2 9 Tf 54 432 Td (*) Tj ET
+BT /F1 9 Tf 68 432 Td (`top_k`: Integer number of chunks to return \(default: 3 to 5\).) Tj ET
+BT /F2 9 Tf 54 416 Td (*) Tj ET
+BT /F1 9 Tf 68 416 Td (`similarity_threshold`: Float minimum score cutoff \(configurable variable; proposed) Tj ET
+BT /F1 9 Tf 68 403 Td (initial baseline: 0.35\).) Tj ET
+BT /F2 9 Tf 54 387 Td (*) Tj ET
+BT /F1 9 Tf 68 387 Td (**Expected Output**:) Tj ET
+BT /F2 9 Tf 54 371 Td (*) Tj ET
+BT /F1 9 Tf 68 371 Td (`chunks_retrieved`: List of matched chunk objects with IDs, document names, text) Tj ET
+BT /F1 9 Tf 68 358 Td (snippets, and similarity scores.) Tj ET
+BT /F2 9 Tf 54 342 Td (*) Tj ET
+BT /F1 9 Tf 68 342 Td (`max_similarity_score`: Highest cosine similarity score achieved.) Tj ET
+BT /F2 9 Tf 54 326 Td (*) Tj ET
+BT /F1 9 Tf 68 326 Td (`has_sufficient_context`: Boolean indicating if relevant information was found.) Tj ET
+BT /F2 9 Tf 54 310 Td (*) Tj ET
+BT /F1 9 Tf 68 310 Td (**Interaction with Other Agents**:) Tj ET
+BT /F2 9 Tf 54 294 Td (*) Tj ET
+BT /F1 9 Tf 68 294 Td (Receives search query from Query Understanding Agent \(or direct API call in) Tj ET
+BT /F1 9 Tf 68 281 Td (Milestone 1 testing mode\).) Tj ET
+BT /F2 9 Tf 54 265 Td (*) Tj ET
+BT /F1 9 Tf 68 265 Td (Queries the Vector & Persistence Tier.) Tj ET
+BT /F2 9 Tf 54 249 Td (*) Tj ET
+BT /F1 9 Tf 68 249 Td (Passes retrieved chunks to Response Generation Agent if `has_sufficient_context` is) Tj ET
+BT /F1 9 Tf 68 236 Td (true \(`max_similarity_score >= similarity_threshold`\).) Tj ET
+BT /F2 9 Tf 54 220 Td (*) Tj ET
+BT /F1 9 Tf 68 220 Td (If `max_similarity_score < similarity_threshold`:) Tj ET
+BT /F2 9 Tf 54 204 Td (*) Tj ET
+BT /F1 9 Tf 68 204 Td (If partial topic overlap or multiple competing candidate entities are detected,) Tj ET
+BT /F1 9 Tf 68 191 Td (routes to Clarification Agent for user disambiguation.) Tj ET
+BT /F2 9 Tf 54 175 Td (*) Tj ET
+BT /F1 9 Tf 68 175 Td (If zero meaningful overlap is detected, returns an "Information Unavailable" message) Tj ET
+BT /F1 9 Tf 68 162 Td (directly to the client.) Tj ET
+BT /F2 9 Tf 54 146 Td (*) Tj ET
+BT /F1 9 Tf 68 146 Td (**Position in the Proposed Workflow**: Sits between Query Understanding and Response) Tj ET
+BT /F1 9 Tf 68 133 Td (Generation / Clarification.) Tj ET
+BT /F2 9.5 Tf 54 113 Td (Input / Output Contract) Tj ET
+BT /F1 9 Tf 54 99 Td ([!NOTE]) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 7 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+27 0 obj
+<< /Length 4288 >>
+stream
+BT /F1 9 Tf 54 730 Td (**Illustrative Synthetic Example**: The JSON payload below is an illustrative, synthetic) Tj ET
+BT /F1 9 Tf 54 717 Td (design contract specified for architectural planning. Values and metrics are design) Tj ET
+BT /F1 9 Tf 54 704 Td (examples, not measured or runtime results.) Tj ET
+BT /F3 7.5 Tf 64 686 Td ({) Tj ET
+BT /F3 7.5 Tf 64 676 Td (  "agent": "RetrievalAgent",) Tj ET
+BT /F3 7.5 Tf 64 666 Td (  "input": {) Tj ET
+BT /F3 7.5 Tf 64 656 Td (    "search_query": "Standard operating procedure for server restart sequence following a power outa) Tj ET
+BT /F3 7.5 Tf 64 646 Td (    "top_k": 3,) Tj ET
+BT /F3 7.5 Tf 64 636 Td (    "similarity_threshold": 0.35) Tj ET
+BT /F3 7.5 Tf 64 626 Td (  },) Tj ET
+BT /F3 7.5 Tf 64 616 Td (  "output": {) Tj ET
+BT /F3 7.5 Tf 64 606 Td (    "chunks_retrieved": [) Tj ET
+BT /F3 7.5 Tf 64 596 Td (      {) Tj ET
+BT /F3 7.5 Tf 64 586 Td (        "chunk_id": "chk_8941",) Tj ET
+BT /F3 7.5 Tf 64 576 Td (        "document_name": "datacenter_sdr_manual.docx",) Tj ET
+BT /F3 7.5 Tf 64 566 Td (        "chunk_index": 4,) Tj ET
+BT /F3 7.5 Tf 64 556 Td (        "similarity_score": 0.812,) Tj ET
+BT /F3 7.5 Tf 64 546 Td (        "text": "In the event of an unplanned power interruption, datacenter operators must first ve) Tj ET
+BT /F3 7.5 Tf 64 536 Td (      }) Tj ET
+BT /F3 7.5 Tf 64 526 Td (    ],) Tj ET
+BT /F3 7.5 Tf 64 516 Td (    "max_similarity_score": 0.812,) Tj ET
+BT /F3 7.5 Tf 64 506 Td (    "has_sufficient_context": true) Tj ET
+BT /F3 7.5 Tf 64 496 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 486 Td (}) Tj ET
+BT /F1 9 Tf 54 476 Td (---) Tj ET
+BT /F2 11 Tf 54 452 Td (4.3 Response Generation Agent \(RGA\)) Tj ET
+BT /F2 9 Tf 54 436 Td (*) Tj ET
+BT /F1 9 Tf 68 436 Td (**Purpose**: Synthesizes retrieved document passages into fluent, factual answers) Tj ET
+BT /F1 9 Tf 68 423 Td (with explicit citations, incorporating strict context constraints and citation rules) Tj ET
+BT /F1 9 Tf 68 410 Td (as safeguards to substantially reduce unsupported or hallucinated responses.) Tj ET
+BT /F2 9 Tf 54 394 Td (*) Tj ET
+BT /F1 9 Tf 68 394 Td (**Responsibilities**:) Tj ET
+BT /F2 9 Tf 54 378 Td (*) Tj ET
+BT /F1 9 Tf 68 378 Td (Formulate structured prompt context injecting retrieved chunks and user query.) Tj ET
+BT /F2 9 Tf 54 362 Td (*) Tj ET
+BT /F1 9 Tf 68 362 Td (Generate grounded natural language responses strictly constrained to provided) Tj ET
+BT /F1 9 Tf 68 349 Td (chunks, minimizing ungrounded responses by restricting assertions to supplied) Tj ET
+BT /F1 9 Tf 68 336 Td (passages.) Tj ET
+BT /F2 9 Tf 54 320 Td (*) Tj ET
+BT /F1 9 Tf 68 320 Td (Generate unambiguous source citations mapped to source document filenames and chunk) Tj ET
+BT /F1 9 Tf 68 307 Td (indices \(`[Doc: <name>, Chunk: <index>]`\).) Tj ET
+BT /F2 9 Tf 54 291 Td (*) Tj ET
+BT /F1 9 Tf 68 291 Td (Calculate grounding confidence score \($0.0$ to $1.0$\).) Tj ET
+BT /F2 9 Tf 54 275 Td (*) Tj ET
+BT /F1 9 Tf 68 275 Td (Refuse to answer if context is contradictory or insufficient.) Tj ET
+BT /F2 9 Tf 54 259 Td (*) Tj ET
+BT /F1 9 Tf 68 259 Td (**Expected Input**:) Tj ET
+BT /F2 9 Tf 54 243 Td (*) Tj ET
+BT /F1 9 Tf 68 243 Td (`user_query`: Original or clarified user question.) Tj ET
+BT /F2 9 Tf 54 227 Td (*) Tj ET
+BT /F1 9 Tf 68 227 Td (`retrieved_context`: List of candidate chunks with chunk IDs, document names, chunk) Tj ET
+BT /F1 9 Tf 68 214 Td (indices, and text.) Tj ET
+BT /F2 9 Tf 54 198 Td (*) Tj ET
+BT /F1 9 Tf 68 198 Td (**Expected Output**:) Tj ET
+BT /F2 9 Tf 54 182 Td (*) Tj ET
+BT /F1 9 Tf 68 182 Td (`response_text`: Grounded markdown response with inline citations strictly based on) Tj ET
+BT /F1 9 Tf 68 169 Td (provided context.) Tj ET
+BT /F2 9 Tf 54 153 Td (*) Tj ET
+BT /F1 9 Tf 68 153 Td (`citations`: List of structured citation objects \(`document_name`, `chunk_index`,) Tj ET
+BT /F1 9 Tf 68 140 Td (`chunk_id`\).) Tj ET
+BT /F2 9 Tf 54 124 Td (*) Tj ET
+BT /F1 9 Tf 68 124 Td (`grounding_confidence`: Float between $0.0$ and $1.0$.) Tj ET
+BT /F2 9 Tf 54 108 Td (*) Tj ET
+BT /F1 9 Tf 68 108 Td (**Interaction with Other Agents**:) Tj ET
+BT /F2 9 Tf 54 92 Td (*) Tj ET
+BT /F1 9 Tf 68 92 Td (Receives context chunks from Retrieval Agent.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 8 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+28 0 obj
+<< /Length 4145 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (Emits grounded response to Conversation Memory Agent \(for logging\) and to API) Tj ET
+BT /F1 9 Tf 68 717 Td (Gateway for user presentation.) Tj ET
+BT /F2 9 Tf 54 701 Td (*) Tj ET
+BT /F1 9 Tf 68 701 Td (**Position in the Proposed Workflow**: Final synthesis step before updating) Tj ET
+BT /F1 9 Tf 68 688 Td (conversation history and returning answer to client.) Tj ET
+BT /F2 9.5 Tf 54 668 Td (Input / Output Contract) Tj ET
+BT /F1 9 Tf 54 654 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 636 Td (**Illustrative Synthetic Example**: The JSON payload below is an illustrative, synthetic) Tj ET
+BT /F1 9 Tf 54 623 Td (design contract specified for architectural planning. Values and metrics are design) Tj ET
+BT /F1 9 Tf 54 610 Td (examples, not measured or runtime results. The response contains only assertions) Tj ET
+BT /F1 9 Tf 54 597 Td (substantiated by the supplied context chunk.) Tj ET
+BT /F3 7.5 Tf 64 579 Td ({) Tj ET
+BT /F3 7.5 Tf 64 569 Td (  "agent": "ResponseGenerationAgent",) Tj ET
+BT /F3 7.5 Tf 64 559 Td (  "input": {) Tj ET
+BT /F3 7.5 Tf 64 549 Td (    "user_query": "What are the server restart steps after power outage?",) Tj ET
+BT /F3 7.5 Tf 64 539 Td (    "retrieved_context": [) Tj ET
+BT /F3 7.5 Tf 64 529 Td (      {) Tj ET
+BT /F3 7.5 Tf 64 519 Td (        "chunk_id": "chk_8941",) Tj ET
+BT /F3 7.5 Tf 64 509 Td (        "document_name": "datacenter_sdr_manual.docx",) Tj ET
+BT /F3 7.5 Tf 64 499 Td (        "chunk_index": 4,) Tj ET
+BT /F3 7.5 Tf 64 489 Td (        "text": "In the event of an unplanned power interruption, datacenter operators must first ve) Tj ET
+BT /F3 7.5 Tf 64 479 Td (      }) Tj ET
+BT /F3 7.5 Tf 64 469 Td (    ]) Tj ET
+BT /F3 7.5 Tf 64 459 Td (  },) Tj ET
+BT /F3 7.5 Tf 64 449 Td (  "output": {) Tj ET
+BT /F3 7.5 Tf 64 439 Td (    "response_text": "Following an unplanned power interruption, operators must first verify that au) Tj ET
+BT /F3 7.5 Tf 64 429 Td (    "citations": [) Tj ET
+BT /F3 7.5 Tf 64 419 Td (      {) Tj ET
+BT /F3 7.5 Tf 64 409 Td (        "document": "datacenter_sdr_manual.docx",) Tj ET
+BT /F3 7.5 Tf 64 399 Td (        "chunk_index": 4,) Tj ET
+BT /F3 7.5 Tf 64 389 Td (        "chunk_id": "chk_8941") Tj ET
+BT /F3 7.5 Tf 64 379 Td (      }) Tj ET
+BT /F3 7.5 Tf 64 369 Td (    ],) Tj ET
+BT /F3 7.5 Tf 64 359 Td (    "grounding_confidence": 0.95) Tj ET
+BT /F3 7.5 Tf 64 349 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 339 Td (}) Tj ET
+BT /F1 9 Tf 54 329 Td (---) Tj ET
+BT /F2 11 Tf 54 305 Td (4.4 Clarification Agent \(CA\)) Tj ET
+BT /F2 9 Tf 54 289 Td (*) Tj ET
+BT /F1 9 Tf 68 289 Td (**Purpose**: Proactively engages the user when an inquiry is ambiguous,) Tj ET
+BT /F1 9 Tf 68 276 Td (underspecified, or when retrieval reveals competing topics, formulating focused) Tj ET
+BT /F1 9 Tf 68 263 Td (questions rather than making speculative assumptions.) Tj ET
+BT /F2 9 Tf 54 247 Td (*) Tj ET
+BT /F1 9 Tf 68 247 Td (**Responsibilities**:) Tj ET
+BT /F2 9 Tf 54 231 Td (*) Tj ET
+BT /F1 9 Tf 68 231 Td (Detect ambiguity causes:) Tj ET
+BT /F2 9 Tf 54 215 Td (*) Tj ET
+BT /F1 9 Tf 68 215 Td (Pre-retrieval query ambiguity \(`ambiguity_score >= 0.50`\).) Tj ET
+BT /F2 9 Tf 54 199 Td (*) Tj ET
+BT /F1 9 Tf 68 199 Td (Post-retrieval topic overlap / competing candidate entities where scores are close) Tj ET
+BT /F1 9 Tf 68 186 Td (to `similarity_threshold`.) Tj ET
+BT /F2 9 Tf 54 170 Td (*) Tj ET
+BT /F1 9 Tf 68 170 Td (Formulate clear, concise follow-up questions with suggested multiple-choice options.) Tj ET
+BT /F2 9 Tf 54 154 Td (*) Tj ET
+BT /F1 9 Tf 68 154 Td (Explicitly inform the user when requested information does not exist in the) Tj ET
+BT /F1 9 Tf 68 141 Td (knowledge base.) Tj ET
+BT /F2 9 Tf 54 125 Td (*) Tj ET
+BT /F1 9 Tf 68 125 Td (**Expected Input**:) Tj ET
+BT /F2 9 Tf 54 109 Td (*) Tj ET
+BT /F1 9 Tf 68 109 Td (`raw_query`: Original query text.) Tj ET
+BT /F2 9 Tf 54 93 Td (*) Tj ET
+BT /F1 9 Tf 68 93 Td (`ambiguity_reason`: Diagnostic description of why the query cannot be retrieved) Tj ET
+BT /F1 9 Tf 68 80 Td (directly.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 9 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+29 0 obj
+<< /Length 4437 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (`candidate_entities`: Conflicting or candidate topics detected in the corpus.) Tj ET
+BT /F2 9 Tf 54 714 Td (*) Tj ET
+BT /F1 9 Tf 68 714 Td (**Expected Output**:) Tj ET
+BT /F2 9 Tf 54 698 Td (*) Tj ET
+BT /F1 9 Tf 68 698 Td (`is_clarification_required`: Boolean flag \(`true`\).) Tj ET
+BT /F2 9 Tf 54 682 Td (*) Tj ET
+BT /F1 9 Tf 68 682 Td (`clarification_message`: Focused follow-up prompt for user.) Tj ET
+BT /F2 9 Tf 54 666 Td (*) Tj ET
+BT /F1 9 Tf 68 666 Td (`suggested_options`: Array of selectable clarifying options.) Tj ET
+BT /F2 9 Tf 54 650 Td (*) Tj ET
+BT /F1 9 Tf 68 650 Td (**Interaction with Other Agents**:) Tj ET
+BT /F2 9 Tf 54 634 Td (*) Tj ET
+BT /F1 9 Tf 68 634 Td (Invoked by Query Understanding Agent when `ambiguity_score >= 0.50`.) Tj ET
+BT /F2 9 Tf 54 618 Td (*) Tj ET
+BT /F1 9 Tf 68 618 Td (Invoked by Retrieval Agent when candidate scores fall slightly below) Tj ET
+BT /F1 9 Tf 68 605 Td (`similarity_threshold` with multiple conflicting topic matches.) Tj ET
+BT /F2 9 Tf 54 589 Td (*) Tj ET
+BT /F1 9 Tf 68 589 Td (Delivers prompt to user, whose reply feeds back into Conversation Memory Agent and) Tj ET
+BT /F1 9 Tf 68 576 Td (Query Understanding Agent.) Tj ET
+BT /F2 9 Tf 54 560 Td (*) Tj ET
+BT /F1 9 Tf 68 560 Td (**Position in the Proposed Workflow**: Alternative branch taken instead of Retrieval) Tj ET
+BT /F1 9 Tf 68 547 Td (or Response Generation when query input or retrieval results are underspecified.) Tj ET
+BT /F2 9.5 Tf 54 527 Td (Input / Output Contract) Tj ET
+BT /F1 9 Tf 54 513 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 495 Td (**Illustrative Synthetic Example**: The JSON payload below is an illustrative, synthetic) Tj ET
+BT /F1 9 Tf 54 482 Td (design contract specified for architectural planning. Values and metrics are design) Tj ET
+BT /F1 9 Tf 54 469 Td (examples, not measured or runtime results.) Tj ET
+BT /F3 7.5 Tf 64 451 Td ({) Tj ET
+BT /F3 7.5 Tf 64 441 Td (  "agent": "ClarificationAgent",) Tj ET
+BT /F3 7.5 Tf 64 431 Td (  "input": {) Tj ET
+BT /F3 7.5 Tf 64 421 Td (    "raw_query": "How do I upgrade the database?",) Tj ET
+BT /F3 7.5 Tf 64 411 Td (    "ambiguity_reason": "Multiple databases detected in knowledge base: PostgreSQL v15 and SQLite 3.) Tj ET
+BT /F3 7.5 Tf 64 401 Td (    "candidate_entities": [) Tj ET
+BT /F3 7.5 Tf 64 391 Td (      "PostgreSQL",) Tj ET
+BT /F3 7.5 Tf 64 381 Td (      "SQLite") Tj ET
+BT /F3 7.5 Tf 64 371 Td (    ]) Tj ET
+BT /F3 7.5 Tf 64 361 Td (  },) Tj ET
+BT /F3 7.5 Tf 64 351 Td (  "output": {) Tj ET
+BT /F3 7.5 Tf 64 341 Td (    "is_clarification_required": true,) Tj ET
+BT /F3 7.5 Tf 64 331 Td (    "clarification_message": "Our documentation contains upgrade procedures for multiple database sy) Tj ET
+BT /F3 7.5 Tf 64 321 Td (    "suggested_options": [) Tj ET
+BT /F3 7.5 Tf 64 311 Td (      "PostgreSQL Production Cluster",) Tj ET
+BT /F3 7.5 Tf 64 301 Td (      "SQLite Local Application Cache") Tj ET
+BT /F3 7.5 Tf 64 291 Td (    ]) Tj ET
+BT /F3 7.5 Tf 64 281 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 271 Td (}) Tj ET
+BT /F1 9 Tf 54 261 Td (---) Tj ET
+BT /F2 11 Tf 54 237 Td (4.5 Conversation Memory Agent \(CMA\)) Tj ET
+BT /F2 9 Tf 54 221 Td (*) Tj ET
+BT /F1 9 Tf 68 221 Td (**Purpose**: Maintains dialogue history across multi-turn user sessions, providing) Tj ET
+BT /F1 9 Tf 68 208 Td (context resolution for follow-up questions and pronoun references.) Tj ET
+BT /F2 9 Tf 54 192 Td (*) Tj ET
+BT /F1 9 Tf 68 192 Td (**Responsibilities**:) Tj ET
+BT /F2 9 Tf 54 176 Td (*) Tj ET
+BT /F1 9 Tf 68 176 Td (Track session IDs and maintain chronological dialogue turns.) Tj ET
+BT /F2 9 Tf 54 160 Td (*) Tj ET
+BT /F1 9 Tf 68 160 Td (Store query-response pairs, retrieved chunk references, and user selections.) Tj ET
+BT /F2 9 Tf 54 144 Td (*) Tj ET
+BT /F1 9 Tf 68 144 Td (Provide a sliding window of recent conversation turns \(e.g. last 5-10 turns\).) Tj ET
+BT /F2 9 Tf 54 128 Td (*) Tj ET
+BT /F1 9 Tf 68 128 Td (Distill older context to preserve token limits while maintaining coherence.) Tj ET
+BT /F2 9 Tf 54 112 Td (*) Tj ET
+BT /F1 9 Tf 68 112 Td (Reset session history upon explicit user request.) Tj ET
+BT /F2 9 Tf 54 96 Td (*) Tj ET
+BT /F1 9 Tf 68 96 Td (**Expected Input**:) Tj ET
+BT /F2 9 Tf 54 80 Td (*) Tj ET
+BT /F1 9 Tf 68 80 Td (`session_id`: Unique identifier for the conversation session.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 10 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+30 0 obj
+<< /Length 4021 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (`action`: Operation to perform \(`GET_CONTEXT`, `APPEND_TURN`, `CLEAR_SESSION`\).) Tj ET
+BT /F2 9 Tf 54 714 Td (*) Tj ET
+BT /F1 9 Tf 68 714 Td (`turn_data`: User query and assistant response payload \(for `APPEND_TURN`\).) Tj ET
+BT /F2 9 Tf 54 698 Td (*) Tj ET
+BT /F1 9 Tf 68 698 Td (`turn_limit`: Number of recent turns to return \(for `GET_CONTEXT`\).) Tj ET
+BT /F2 9 Tf 54 682 Td (*) Tj ET
+BT /F1 9 Tf 68 682 Td (**Expected Output**:) Tj ET
+BT /F2 9 Tf 54 666 Td (*) Tj ET
+BT /F1 9 Tf 68 666 Td (`session_id`: Unique session identifier.) Tj ET
+BT /F2 9 Tf 54 650 Td (*) Tj ET
+BT /F1 9 Tf 68 650 Td (`history`: Array of past conversation turns with role, message, and metadata.) Tj ET
+BT /F2 9 Tf 54 634 Td (*) Tj ET
+BT /F1 9 Tf 68 634 Td (`active_entity_context`: Extracted active topics/entities from recent turns.) Tj ET
+BT /F2 9 Tf 54 618 Td (*) Tj ET
+BT /F1 9 Tf 68 618 Td (**Interaction with Other Agents**:) Tj ET
+BT /F2 9 Tf 54 602 Td (*) Tj ET
+BT /F1 9 Tf 68 602 Td (Supplies context history to Query Understanding Agent at session start.) Tj ET
+BT /F2 9 Tf 54 586 Td (*) Tj ET
+BT /F1 9 Tf 68 586 Td (Receives finalized response from Response Generation Agent or Clarification Agent to) Tj ET
+BT /F1 9 Tf 68 573 Td (append turn.) Tj ET
+BT /F2 9 Tf 54 557 Td (*) Tj ET
+BT /F1 9 Tf 68 557 Td (**Position in the Proposed Workflow**: Envelops the entire lifecycle: consulted at) Tj ET
+BT /F1 9 Tf 68 544 Td (query entry and updated at query completion.) Tj ET
+BT /F2 9.5 Tf 54 524 Td (Input / Output Contract) Tj ET
+BT /F1 9 Tf 54 510 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 492 Td (**Illustrative Synthetic Example**: The JSON payload below is an illustrative, synthetic) Tj ET
+BT /F1 9 Tf 54 479 Td (design contract specified for architectural planning. Values and entities are neutral) Tj ET
+BT /F1 9 Tf 54 466 Td (fictional examples, not compliance claims or measured results.) Tj ET
+BT /F3 7.5 Tf 64 448 Td ({) Tj ET
+BT /F3 7.5 Tf 64 438 Td (  "agent": "ConversationMemoryAgent",) Tj ET
+BT /F3 7.5 Tf 64 428 Td (  "input": {) Tj ET
+BT /F3 7.5 Tf 64 418 Td (    "session_id": "sess_90214",) Tj ET
+BT /F3 7.5 Tf 64 408 Td (    "action": "GET_CONTEXT",) Tj ET
+BT /F3 7.5 Tf 64 398 Td (    "turn_limit": 3) Tj ET
+BT /F3 7.5 Tf 64 388 Td (  },) Tj ET
+BT /F3 7.5 Tf 64 378 Td (  "output": {) Tj ET
+BT /F3 7.5 Tf 64 368 Td (    "session_id": "sess_90214",) Tj ET
+BT /F3 7.5 Tf 64 358 Td (    "history": [) Tj ET
+BT /F3 7.5 Tf 64 348 Td (      {) Tj ET
+BT /F3 7.5 Tf 64 338 Td (        "turn": 1,) Tj ET
+BT /F3 7.5 Tf 64 328 Td (        "role": "user",) Tj ET
+BT /F3 7.5 Tf 64 318 Td (        "message": "What is the primary network interface for the web cluster?") Tj ET
+BT /F3 7.5 Tf 64 308 Td (      },) Tj ET
+BT /F3 7.5 Tf 64 298 Td (      {) Tj ET
+BT /F3 7.5 Tf 64 288 Td (        "turn": 1,) Tj ET
+BT /F3 7.5 Tf 64 278 Td (        "role": "assistant",) Tj ET
+BT /F3 7.5 Tf 64 268 Td (        "message": "The primary network interface for the web cluster is eth0, configured with stati) Tj ET
+BT /F3 7.5 Tf 64 258 Td (      }) Tj ET
+BT /F3 7.5 Tf 64 248 Td (    ],) Tj ET
+BT /F3 7.5 Tf 64 238 Td (    "active_entity_context": "Web cluster network interface configuration") Tj ET
+BT /F3 7.5 Tf 64 228 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 218 Td (}) Tj ET
+BT /F1 9 Tf 54 208 Td (---) Tj ET
+BT /F2 13 Tf 54 182 Td (5. Multi-Agent Orchestration & Information Flow) Tj ET
+BT /F1 9 Tf 54 164 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 146 Td (The orchestration architecture documented below is a **proposed design specification for) Tj ET
+BT /F1 9 Tf 54 133 Td (Milestone 2 implementation**. It is not operational in Milestone 1. In Milestone 1,) Tj ET
+BT /F1 9 Tf 54 120 Td (search queries interface directly with the standalone semantic retrieval pipeline) Tj ET
+BT /F1 9 Tf 54 107 Td (\(M1.4\).) Tj ET
+BT /F2 11 Tf 54 83 Td (5.1 Orchestration Logic & Conditional Routing) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 11 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+31 0 obj
+<< /Length 5085 >>
+stream
+BT /F1 9 Tf 54 730 Td (The coordination between the five agents follows a **Conditional Router Topology**. A) Tj ET
+BT /F1 9 Tf 54 717 Td (central orchestrator evaluates intermediate metrics at each step, making deterministic) Tj ET
+BT /F1 9 Tf 54 704 Td (routing decisions based on ambiguity and similarity thresholds:) Tj ET
+BT /F3 7.5 Tf 64 686 Td ([ User Input Received ]) Tj ET
+BT /F3 7.5 Tf 64 676 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 666 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 656 Td ([ Consult Conversation Memory Agent ]     Retrieve recent dialogue context) Tj ET
+BT /F3 7.5 Tf 64 646 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 636 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 626 Td ([ Invoke Query Understanding Agent ]) Tj ET
+BT /F3 7.5 Tf 64 616 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 606 Td (               Ambiguity Score >= 0.50 ?       [ Invoke Clarification Agent ]     [ Prompt User ]) Tj ET
+BT /F3 7.5 Tf 64 596 Td (           ) Tj ET
+BT /F3 7.5 Tf 64 586 Td (               Ambiguity Score < 0.50 \(Clear Query\)) Tj ET
+BT /F3 7.5 Tf 64 576 Td (                      ) Tj ET
+BT /F3 7.5 Tf 64 566 Td (                      ) Tj ET
+BT /F3 7.5 Tf 64 556 Td (        [ Invoke Retrieval Agent ]) Tj ET
+BT /F3 7.5 Tf 64 546 Td (                      ) Tj ET
+BT /F3 7.5 Tf 64 536 Td (                          Max Similarity Score < Similarity Threshold ?) Tj ET
+BT /F3 7.5 Tf 64 526 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 516 Td (                                     Partial Overlap / Competing Entities ?) Tj ET
+BT /F3 7.5 Tf 64 506 Td (                                            ) Tj ET
+BT /F3 7.5 Tf 64 496 Td (                                            ) Tj ET
+BT /F3 7.5 Tf 64 486 Td (                                    [ Invoke Clarification Agent ]     [ Prompt User with Disambigua) Tj ET
+BT /F3 7.5 Tf 64 476 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 466 Td (                                     Zero / Negligible Overlap ?) Tj ET
+BT /F3 7.5 Tf 64 456 Td (                                            ) Tj ET
+BT /F3 7.5 Tf 64 446 Td (                                            ) Tj ET
+BT /F3 7.5 Tf 64 436 Td (                                    [ Return "Unavailable Information" Message ]) Tj ET
+BT /F3 7.5 Tf 64 426 Td (                      ) Tj ET
+BT /F3 7.5 Tf 64 416 Td (                          Max Similarity Score >= Similarity Threshold \(Sufficient Context\)) Tj ET
+BT /F3 7.5 Tf 64 406 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 396 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 386 Td (                 [ Invoke Response Generation Agent ]) Tj ET
+BT /F3 7.5 Tf 64 376 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 366 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 356 Td (                 [ Update Conversation Memory Agent ]) Tj ET
+BT /F3 7.5 Tf 64 346 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 336 Td (                                 ) Tj ET
+BT /F3 7.5 Tf 64 326 Td (                 [ Deliver Final Grounded Answer ]) Tj ET
+BT /F2 9.5 Tf 54 312 Td (Routing Decision Criteria:) Tj ET
+BT /F2 9 Tf 54 298 Td (*) Tj ET
+BT /F1 9 Tf 68 298 Td (**Dialogue Context Resolution**: The orchestrator retrieves prior session state from) Tj ET
+BT /F1 9 Tf 68 285 Td (the Conversation Memory Agent before analyzing a new user input.) Tj ET
+BT /F2 9 Tf 54 269 Td (*) Tj ET
+BT /F1 9 Tf 68 269 Td (**Pre-Retrieval Ambiguity Gate**:) Tj ET
+BT /F2 9 Tf 54 253 Td (*) Tj ET
+BT /F1 9 Tf 68 253 Td (`ambiguity_score >= 0.50`: The query is classified as underspecified, vague, or) Tj ET
+BT /F1 9 Tf 68 240 Td (missing necessary context. The orchestrator diverts execution immediately to the) Tj ET
+BT /F1 9 Tf 68 227 Td (**Clarification Agent**, prompting the user with targeted clarifying options.) Tj ET
+BT /F2 9 Tf 54 211 Td (*) Tj ET
+BT /F1 9 Tf 68 211 Td (`ambiguity_score < 0.50`: The query is classified as clear and actionable. The) Tj ET
+BT /F1 9 Tf 68 198 Td (orchestrator routes the query directly to the **Retrieval Agent**.) Tj ET
+BT /F2 9 Tf 54 182 Td (*) Tj ET
+BT /F1 9 Tf 68 182 Td (**Post-Retrieval Relevance & Disambiguation Gate**:) Tj ET
+BT /F2 9 Tf 54 166 Td (*) Tj ET
+BT /F1 9 Tf 68 166 Td (The orchestrator compares the **maximum retrieved similarity score**) Tj ET
+BT /F1 9 Tf 68 153 Td (\(`max_similarity_score`\) against the configurable `similarity_threshold`:) Tj ET
+BT /F2 9 Tf 54 137 Td (*) Tj ET
+BT /F1 9 Tf 68 137 Td (`max_similarity_score < similarity_threshold`:) Tj ET
+BT /F2 9 Tf 54 121 Td (*) Tj ET
+BT /F1 9 Tf 68 121 Td (*Case A \(Partial Overlap / Competing Entities\)*: Candidate chunks score near the) Tj ET
+BT /F1 9 Tf 68 108 Td (threshold with partial semantic overlap across multiple distinct topics or systems.) Tj ET
+BT /F1 9 Tf 68 95 Td (The orchestrator invokes the **Clarification Agent** to ask the user which specific) Tj ET
+BT /F1 9 Tf 68 82 Td (topic or system they meant.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 12 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+32 0 obj
+<< /Length 5269 >>
+stream
+BT /F2 9 Tf 54 730 Td (*) Tj ET
+BT /F1 9 Tf 68 730 Td (*Case B \(Zero / Negligible Relevance\)*: Chunks score well below the cutoff with no) Tj ET
+BT /F1 9 Tf 68 717 Td (meaningful topic match. The orchestrator returns an **Unavailable Information**) Tj ET
+BT /F1 9 Tf 68 704 Td (response directly, stating that the knowledge base lacks information on that topic.) Tj ET
+BT /F2 9 Tf 54 688 Td (*) Tj ET
+BT /F1 9 Tf 68 688 Td (`max_similarity_score >= similarity_threshold`: The retrieved passages provide) Tj ET
+BT /F1 9 Tf 68 675 Td (sufficient relevant context. Execution proceeds to the **Response Generation) Tj ET
+BT /F1 9 Tf 68 662 Td (Agent**.) Tj ET
+BT /F2 9 Tf 54 646 Td (*) Tj ET
+BT /F1 9 Tf 68 646 Td (*Baseline Threshold Note*: The threshold value `0.35` is a proposed initial baseline) Tj ET
+BT /F1 9 Tf 68 633 Td (that will be empirically evaluated and calibrated during M1.4 testing across both) Tj ET
+BT /F1 9 Tf 68 620 Td (test domains, rather than an experimentally established constant.) Tj ET
+BT /F2 9 Tf 54 604 Td (*) Tj ET
+BT /F1 9 Tf 68 604 Td (**Grounded Synthesis**: The Response Generation Agent synthesizes the final answer,) Tj ET
+BT /F1 9 Tf 68 591 Td (strictly grounded in the retrieved passages with inline citations.) Tj ET
+BT /F2 9 Tf 54 575 Td (*) Tj ET
+BT /F1 9 Tf 68 575 Td (**State Commitment**: The final interaction turn \(query, citations, answer\) is) Tj ET
+BT /F1 9 Tf 68 562 Td (committed back to the Conversation Memory Agent.) Tj ET
+BT /F1 9 Tf 54 546 Td (---) Tj ET
+BT /F2 11 Tf 54 522 Td (5.2 Multi-Agent Execution Sequence Diagram) Tj ET
+BT /F1 9 Tf 54 506 Td (The sequence diagram below shows the interaction lifecycles across the proposed) Tj ET
+BT /F1 9 Tf 54 493 Td (multi-agent workflow.) Tj ET
+BT /F1 9 Tf 54 475 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 457 Td (This sequence diagram represents a **proposed Milestone 2 architecture**. Speech input) Tj ET
+BT /F1 9 Tf 54 444 Td (and text-to-speech \(TTS\) playback belong to future Milestone 2 scope and are not) Tj ET
+BT /F1 9 Tf 54 431 Td (executed in Milestone 1.) Tj ET
+BT /F3 7.5 Tf 64 413 Td (sequenceDiagram) Tj ET
+BT /F3 7.5 Tf 64 403 Td (    autonumber) Tj ET
+BT /F3 7.5 Tf 64 393 Td (    actor User as User \(Browser Client\)) Tj ET
+BT /F3 7.5 Tf 64 383 Td (    participant Orchestrator as System Orchestrator) Tj ET
+BT /F3 7.5 Tf 64 373 Td (    participant CMA as Conversation Memory Agent) Tj ET
+BT /F3 7.5 Tf 64 363 Td (    participant QUA as Query Understanding Agent) Tj ET
+BT /F3 7.5 Tf 64 353 Td (    participant CA as Clarification Agent) Tj ET
+BT /F3 7.5 Tf 64 343 Td (    participant RA as Retrieval Agent) Tj ET
+BT /F3 7.5 Tf 64 333 Td (    participant VectorStore as Vector & SQLite Store) Tj ET
+BT /F3 7.5 Tf 64 323 Td (    participant RGA as Response Generation Agent) Tj ET
+BT /F3 7.5 Tf 64 313 Td (    %% Interaction Start) Tj ET
+BT /F3 7.5 Tf 64 303 Td (    User->>Orchestrator: Submits Query \("What is the server restart SOP?"\)) Tj ET
+BT /F3 7.5 Tf 64 293 Td (    Orchestrator->>CMA: Fetch recent session context) Tj ET
+BT /F3 7.5 Tf 64 283 Td (    CMA-->>Orchestrator: Return session history \(empty or recent turns\)) Tj ET
+BT /F3 7.5 Tf 64 273 Td (    %% Step 1: Query Understanding) Tj ET
+BT /F3 7.5 Tf 64 263 Td (    Orchestrator->>QUA: Analyze query + session context) Tj ET
+BT /F3 7.5 Tf 64 253 Td (    QUA-->>Orchestrator: Return Rewritten Query & Ambiguity Score \(0.10\)) Tj ET
+BT /F3 7.5 Tf 64 243 Td (    alt Ambiguity Score >= 0.50 \(Pre-Retrieval Ambiguity\)) Tj ET
+BT /F3 7.5 Tf 64 233 Td (        Orchestrator->>CA: Generate clarifying options) Tj ET
+BT /F3 7.5 Tf 64 223 Td (        CA-->>Orchestrator: Return follow-up question) Tj ET
+BT /F3 7.5 Tf 64 213 Td (        Orchestrator-->>User: "Which server cluster do you wish to restart?") Tj ET
+BT /F3 7.5 Tf 64 203 Td (    else Ambiguity Score < 0.50 \(Clear Query\)) Tj ET
+BT /F3 7.5 Tf 64 193 Td (        %% Step 2: Retrieval) Tj ET
+BT /F3 7.5 Tf 64 183 Td (        Orchestrator->>RA: Execute semantic search \(Rewritten Query\)) Tj ET
+BT /F3 7.5 Tf 64 173 Td (        RA->>VectorStore: Compute Cosine Similarity against Chunk Index) Tj ET
+BT /F3 7.5 Tf 64 163 Td (        VectorStore-->>RA: Return candidate chunks + scores) Tj ET
+BT /F3 7.5 Tf 64 153 Td (        RA-->>Orchestrator: Filtered Top-K Chunks \(max score: 0.81\)) Tj ET
+BT /F3 7.5 Tf 64 143 Td (        alt max_similarity_score < similarity_threshold AND Partial Overlap) Tj ET
+BT /F3 7.5 Tf 64 133 Td (            Orchestrator->>CA: Generate topic disambiguation) Tj ET
+BT /F3 7.5 Tf 64 123 Td (            CA-->>Orchestrator: Return clarifying choices) Tj ET
+BT /F3 7.5 Tf 64 113 Td (            Orchestrator-->>User: "Multiple related procedures found. Please select which system to ) Tj ET
+BT /F3 7.5 Tf 64 103 Td (        else max_similarity_score < similarity_threshold AND Zero Overlap) Tj ET
+BT /F3 7.5 Tf 64 93 Td (            Orchestrator-->>User: "Information not found in the current knowledge base.") Tj ET
+BT /F3 7.5 Tf 64 83 Td (        else max_similarity_score >= similarity_threshold \(Sufficient Context\)) Tj ET
+BT /F3 7.5 Tf 64 73 Td (            %% Step 3: Response Generation) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 13 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+33 0 obj
+<< /Length 4072 >>
+stream
+BT /F3 7.5 Tf 64 730 Td (            Orchestrator->>RGA: Synthesize answer \(Query + Retrieved Chunks\)) Tj ET
+BT /F3 7.5 Tf 64 720 Td (            RGA-->>Orchestrator: Final answer with inline citations) Tj ET
+BT /F3 7.5 Tf 64 710 Td (            Orchestrator->>CMA: Append turn to session history) Tj ET
+BT /F3 7.5 Tf 64 700 Td (            CMA-->>Orchestrator: Acknowledged) Tj ET
+BT /F3 7.5 Tf 64 690 Td (            Orchestrator-->>User: Display answer + citations \(Optional TTS in M2\)) Tj ET
+BT /F3 7.5 Tf 64 680 Td (        end) Tj ET
+BT /F3 7.5 Tf 64 670 Td (    end) Tj ET
+BT /F1 9 Tf 54 660 Td (---) Tj ET
+BT /F2 11 Tf 54 636 Td (5.3 Agent Communication Contracts) Tj ET
+BT /F1 9 Tf 54 620 Td (To ensure interoperability across the proposed multi-agent architecture, agents) Tj ET
+BT /F1 9 Tf 54 607 Td (communicate using structured JSON envelopes:) Tj ET
+BT /F1 9 Tf 54 589 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 571 Td (**Illustrative Synthetic Example**: The envelope below is an illustrative design) Tj ET
+BT /F1 9 Tf 54 558 Td (contract specified for architectural planning.) Tj ET
+BT /F3 7.5 Tf 64 540 Td ({) Tj ET
+BT /F3 7.5 Tf 64 530 Td (  "message_id": "msg_uuid4",) Tj ET
+BT /F3 7.5 Tf 64 520 Td (  "session_id": "sess_uuid4",) Tj ET
+BT /F3 7.5 Tf 64 510 Td (  "timestamp": "2026-11-15T00:50:00Z",) Tj ET
+BT /F3 7.5 Tf 64 500 Td (  "sender": "QueryUnderstandingAgent",) Tj ET
+BT /F3 7.5 Tf 64 490 Td (  "recipient": "RetrievalAgent",) Tj ET
+BT /F3 7.5 Tf 64 480 Td (  "payload": {) Tj ET
+BT /F3 7.5 Tf 64 470 Td (    "rewritten_query": "Standard operating procedure for server restart sequence following a power o) Tj ET
+BT /F3 7.5 Tf 64 460 Td (    "intent": "PROCEDURAL",) Tj ET
+BT /F3 7.5 Tf 64 450 Td (    "entities": [) Tj ET
+BT /F3 7.5 Tf 64 440 Td (      "server",) Tj ET
+BT /F3 7.5 Tf 64 430 Td (      "restart",) Tj ET
+BT /F3 7.5 Tf 64 420 Td (      "power outage") Tj ET
+BT /F3 7.5 Tf 64 410 Td (    ],) Tj ET
+BT /F3 7.5 Tf 64 400 Td (    "confidence": 0.95) Tj ET
+BT /F3 7.5 Tf 64 390 Td (  }) Tj ET
+BT /F3 7.5 Tf 64 380 Td (}) Tj ET
+BT /F1 9 Tf 54 370 Td (---) Tj ET
+BT /F2 13 Tf 54 344 Td (6. End-to-End Data Flow Diagrams) Tj ET
+BT /F2 11 Tf 54 320 Td (6.1 Document Ingestion Data Flow) Tj ET
+BT /F1 9 Tf 54 304 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 286 Td (The document ingestion data flow described below is **planned for implementation in) Tj ET
+BT /F1 9 Tf 54 273 Td (Milestone 1 \(M1.3\)**. It has not yet been implemented or tested.) Tj ET
+BT /F1 9 Tf 54 255 Td (The planned ingestion workflow transforms heterogeneous source files into cleaned,) Tj ET
+BT /F1 9 Tf 54 242 Td (chunked, and embedded representations stored for vector search:) Tj ET
+BT /F1 9 Tf 54 224 Td (`Upload` $\\rightarrow$ `File Validation` $\\rightarrow$ `Text Extraction` $\\rightarrow$) Tj ET
+BT /F1 9 Tf 54 211 Td (`Cleaning` $\\rightarrow$ `Chunking` $\\rightarrow$ `Embedding Generation` $\\rightarrow$) Tj ET
+BT /F1 9 Tf 54 198 Td (`Vector Storage and Metadata Storage`) Tj ET
+BT /F3 7.5 Tf 64 180 Td (flowchart TD) Tj ET
+BT /F3 7.5 Tf 64 170 Td (    A["Raw Document Upload \(PDF, DOCX, TXT, CSV\)"] --> B["Save Original File to Storage"]) Tj ET
+BT /F3 7.5 Tf 64 160 Td (    A --> C{"File Type Router"}) Tj ET
+BT /F3 7.5 Tf 64 150 Td (    C -->|"*.pdf"| D1["pypdf Parser \(Extract page text\)"]) Tj ET
+BT /F3 7.5 Tf 64 140 Td (    C -->|"*.docx"| D2["python-docx Parser \(Extract paragraphs & tables\)"]) Tj ET
+BT /F3 7.5 Tf 64 130 Td (    C -->|"*.txt"| D3["Multi-encoding Reader \(UTF-8 -> CP1252 -> Latin-1\)"]) Tj ET
+BT /F3 7.5 Tf 64 120 Td (    C -->|"*.csv"| D4["pandas Parser \(Serialize rows into descriptive sentences\)"]) Tj ET
+BT /F3 7.5 Tf 64 110 Td (    D1 --> E["Text Cleaner & Normalizer"]) Tj ET
+BT /F3 7.5 Tf 64 100 Td (    D2 --> E) Tj ET
+BT /F3 7.5 Tf 64 90 Td (    D3 --> E) Tj ET
+BT /F3 7.5 Tf 64 80 Td (    D4 --> E) Tj ET
+BT /F3 7.5 Tf 64 70 Td (    E --> F["Sliding-Window Chunker \(Configurable Size: e.g. 400, Overlap: 80\)"]) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 14 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+34 0 obj
+<< /Length 4893 >>
+stream
+BT /F3 7.5 Tf 64 730 Td (    F --> G["Insert Document & Chunks into SQLite Database"]) Tj ET
+BT /F3 7.5 Tf 64 720 Td (    F --> H["Pass Chunks to Sentence-Transformers \(all-MiniLM-L6-v2\)"]) Tj ET
+BT /F3 7.5 Tf 64 710 Td (    H --> I["Generate 384-Dimensional Dense Vectors"]) Tj ET
+BT /F3 7.5 Tf 64 700 Td (    I --> G2["Persist Vector Blobs in SQLite \(embeddings table\)"]) Tj ET
+BT /F3 7.5 Tf 64 690 Td (    I --> J["Populate In-Memory NumPy Vector Matrix"]) Tj ET
+BT /F3 7.5 Tf 64 680 Td (    G --> K[\("SQLite Tables: documents, chunks, embeddings"\)]) Tj ET
+BT /F3 7.5 Tf 64 670 Td (    G2 --> K) Tj ET
+BT /F3 7.5 Tf 64 660 Td (    J --> L[\("In-Memory NumPy Vector Matrix"\)]) Tj ET
+BT /F3 7.5 Tf 64 650 Td (    K --> M["Ingestion Complete \(Return Document ID & Chunk Count\)"]) Tj ET
+BT /F3 7.5 Tf 64 640 Td (    L --> M) Tj ET
+BT /F2 9.5 Tf 54 626 Td (Detailed Stage Breakdown:) Tj ET
+BT /F2 9 Tf 54 612 Td (*) Tj ET
+BT /F1 9 Tf 68 612 Td (**Upload**: The user uploads a source file \(PDF, DOCX, TXT, or CSV\) through the web) Tj ET
+BT /F1 9 Tf 68 599 Td (interface or via the `/api/documents/upload` REST endpoint.) Tj ET
+BT /F2 9 Tf 54 583 Td (*) Tj ET
+BT /F1 9 Tf 68 583 Td (**File Validation**: The API verifies the file extension, checks that file size is) Tj ET
+BT /F1 9 Tf 68 570 Td (within acceptable bounds \($1 \\text{ byte} \\le \\text{size} \\le 10 \\text{ MB}$, a) Tj ET
+BT /F1 9 Tf 68 557 Td (proposed configurable default limit for testing\), and calculates the SHA-256) Tj ET
+BT /F1 9 Tf 68 544 Td (cryptographic hash to detect duplicate uploads.) Tj ET
+BT /F2 9 Tf 54 528 Td (*) Tj ET
+BT /F1 9 Tf 68 528 Td (**Text Extraction**: The file type router directs the document to the corresponding) Tj ET
+BT /F1 9 Tf 68 515 Td (extractor:) Tj ET
+BT /F2 9 Tf 54 499 Td (*) Tj ET
+BT /F1 9 Tf 68 499 Td (`pypdf` extracts text across pages for PDF files.) Tj ET
+BT /F2 9 Tf 54 483 Td (*) Tj ET
+BT /F1 9 Tf 68 483 Td (`python-docx` extracts body paragraphs and table cells for DOCX files.) Tj ET
+BT /F2 9 Tf 54 467 Td (*) Tj ET
+BT /F1 9 Tf 68 467 Td (Multi-encoding reader ingests plain text files with a fallback order of `UTF-8`) Tj ET
+BT /F1 9 Tf 68 454 Td ($\\rightarrow$ `CP1252` $\\rightarrow$ `Latin-1`. Latin-1 is placed as the final) Tj ET
+BT /F1 9 Tf 68 441 Td (fallback because it successfully maps any byte `0x00`-`0xFF` to a character, which) Tj ET
+BT /F1 9 Tf 68 428 Td (would mask CP1252-specific characters if placed earlier.) Tj ET
+BT /F2 9 Tf 54 412 Td (*) Tj ET
+BT /F1 9 Tf 68 412 Td (`pandas` reads CSV tables and serializes row records into descriptive sentences.) Tj ET
+BT /F2 9 Tf 54 396 Td (*) Tj ET
+BT /F1 9 Tf 68 396 Td (**Cleaning**: The raw extracted text undergoes normalization: stripping) Tj ET
+BT /F1 9 Tf 68 383 Td (non-printable ASCII/control characters, standardizing whitespace, repairing) Tj ET
+BT /F1 9 Tf 68 370 Td (hyphenated word breaks, and normalizing Unicode.) Tj ET
+BT /F2 9 Tf 54 354 Td (*) Tj ET
+BT /F1 9 Tf 68 354 Td (**Chunking**: The cleaned text is segmented using a sentence-aware sliding window) Tj ET
+BT /F1 9 Tf 68 341 Td (using a proposed configurable default chunk size of 400 characters \(configurable) Tj ET
+BT /F1 9 Tf 68 328 Td (range: 300 to 500 characters\) and an overlap of 80 characters \(configurable range:) Tj ET
+BT /F1 9 Tf 68 315 Td (50 to 100 characters\) to maintain contextual coherence across segment boundaries.) Tj ET
+BT /F2 9 Tf 54 299 Td (*) Tj ET
+BT /F1 9 Tf 68 299 Td (**Embedding Generation**: Each text chunk is passed to the local `all-MiniLM-L6-v2`) Tj ET
+BT /F1 9 Tf 68 286 Td (Sentence-Transformer model to produce a 384-dimensional dense float32 vector.) Tj ET
+BT /F2 9 Tf 54 270 Td (*) Tj ET
+BT /F1 9 Tf 68 270 Td (**Vector Storage and Metadata Storage**:) Tj ET
+BT /F2 9 Tf 54 254 Td (*) Tj ET
+BT /F1 9 Tf 68 254 Td (**Persistent Storage**: Chunk metadata and cleaned text content are persisted in) Tj ET
+BT /F1 9 Tf 68 241 Td (SQLite \(`documents` and `chunks` tables\), while dense vectors are serialized as) Tj ET
+BT /F1 9 Tf 68 228 Td (1536-byte binary blobs in the `embeddings` table.) Tj ET
+BT /F2 9 Tf 54 212 Td (*) Tj ET
+BT /F1 9 Tf 68 212 Td (**In-Memory Projection**: Dense vectors are loaded into an in-memory 2D NumPy matrix) Tj ET
+BT /F1 9 Tf 68 199 Td (for high-speed linear algebra search during retrieval.) Tj ET
+BT /F1 9 Tf 54 183 Td (---) Tj ET
+BT /F2 11 Tf 54 159 Td (6.2 RAG Retrieval Data Flow) Tj ET
+BT /F1 9 Tf 54 143 Td ([!NOTE]) Tj ET
+BT /F1 9 Tf 54 125 Td (The RAG retrieval pipeline described below is **planned for implementation in Milestone) Tj ET
+BT /F1 9 Tf 54 112 Td (1 \(M1.4\)**. It has not yet been implemented or tested. Actual LLM-based response) Tj ET
+BT /F1 9 Tf 54 99 Td (generation belongs strictly to Milestone 2, not Milestone 1.4.) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 15 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+35 0 obj
+<< /Length 5047 >>
+stream
+BT /F1 9 Tf 54 730 Td (The planned retrieval workflow processes incoming queries and executes vector similarity) Tj ET
+BT /F1 9 Tf 54 717 Td (searches to assemble relevant context:) Tj ET
+BT /F1 9 Tf 54 699 Td (`User Query` $\\rightarrow$ `Query Processing` $\\rightarrow$ `Query Embedding`) Tj ET
+BT /F1 9 Tf 54 686 Td ($\\rightarrow$ `Similarity Search` $\\rightarrow$ `Ranking` $\\rightarrow$ `Threshold) Tj ET
+BT /F1 9 Tf 54 673 Td (Filtering` $\\rightarrow$ `Top-K Retrieval` $\\rightarrow$ `Context Assembly`) Tj ET
+BT /F1 9 Tf 54 660 Td ($\\rightarrow$ `Retrieval Result`) Tj ET
+BT /F3 7.5 Tf 64 642 Td (flowchart TD) Tj ET
+BT /F3 7.5 Tf 64 632 Td (    Q["1. User Query \(Web UI or Web Speech STT\)"] --> A["2. Query Processing \(Normalize & Validate\)") Tj ET
+BT /F3 7.5 Tf 64 622 Td (    A --> B["3. Query Embedding \(all-MiniLM-L6-v2, 384-D\)"]) Tj ET
+BT /F3 7.5 Tf 64 612 Td (    B --> C["Load Indexed Vectors from In-Memory NumPy Matrix"]) Tj ET
+BT /F3 7.5 Tf 64 602 Td (    B --> D["4. Similarity Search \(Compute S = Q * D_T\)"]) Tj ET
+BT /F3 7.5 Tf 64 592 Td (    C --> D) Tj ET
+BT /F3 7.5 Tf 64 582 Td (    D --> E["5. Ranking \(Sort Chunks by Score Descending\)"]) Tj ET
+BT /F3 7.5 Tf 64 572 Td (    E --> F{"6. Threshold Filtering \(Score >= similarity_threshold?\)"}) Tj ET
+BT /F3 7.5 Tf 64 562 Td (    F -->|"No Chunks Pass"| G["Flag as Unavailable Information \(Zero Results\)"]) Tj ET
+BT /F3 7.5 Tf 64 552 Td (    F -->|"Chunks Pass"| H["7. Top-K Retrieval \(Select Top 1, 3, 5 Indices\)"]) Tj ET
+BT /F3 7.5 Tf 64 542 Td (    H --> I["8. Context Assembly \(Fetch Cleaned Text & Metadata from SQLite\)"]) Tj ET
+BT /F3 7.5 Tf 64 532 Td (    I --> J["9. Retrieval Result \(Formatted Payload with Scores & Citations\)"]) Tj ET
+BT /F3 7.5 Tf 64 522 Td (    G --> J) Tj ET
+BT /F2 9.5 Tf 54 508 Td (Detailed Stage Breakdown:) Tj ET
+BT /F2 9 Tf 54 494 Td (*) Tj ET
+BT /F1 9 Tf 68 494 Td (**User Query**: The user submits a natural language search inquiry via the web) Tj ET
+BT /F1 9 Tf 68 481 Td (interface text box or dictates the query using the Web Speech STT interface.) Tj ET
+BT /F2 9 Tf 54 465 Td (*) Tj ET
+BT /F1 9 Tf 68 465 Td (**Query Processing**: The query text is trimmed of superfluous whitespace,) Tj ET
+BT /F1 9 Tf 68 452 Td (normalized for punctuation, and validated to ensure non-empty input.) Tj ET
+BT /F2 9 Tf 54 436 Td (*) Tj ET
+BT /F1 9 Tf 68 436 Td (**Query Embedding**: The normalized query is passed to `all-MiniLM-L6-v2`,) Tj ET
+BT /F1 9 Tf 68 423 Td (generating a single 384-dimensional normalized dense query vector.) Tj ET
+BT /F2 9 Tf 54 407 Td (*) Tj ET
+BT /F1 9 Tf 68 407 Td (**Similarity Search**: The query vector is multiplied against the transposed) Tj ET
+BT /F1 9 Tf 68 394 Td (in-memory NumPy chunk matrix \($S = Q \\cdot D^T$\) to compute exact Cosine Similarity) Tj ET
+BT /F1 9 Tf 68 381 Td (scores for all indexed chunks in a single vectorized operation.) Tj ET
+BT /F2 9 Tf 54 365 Td (*) Tj ET
+BT /F1 9 Tf 68 365 Td (**Ranking**: The resulting similarity scores are sorted in descending order to) Tj ET
+BT /F1 9 Tf 68 352 Td (prioritize the most relevant text passages.) Tj ET
+BT /F2 9 Tf 54 336 Td (*) Tj ET
+BT /F1 9 Tf 68 336 Td (**Threshold Filtering**: A configurable relevance threshold \(`similarity_threshold`,) Tj ET
+BT /F1 9 Tf 68 323 Td (with a proposed initial baseline of `0.35` to be evaluated during M1.4\) is applied:) Tj ET
+BT /F1 9 Tf 68 310 Td (chunks scoring below the cutoff are discarded to prevent irrelevant noise injection.) Tj ET
+BT /F1 9 Tf 68 297 Td (If zero chunks exceed the threshold, the query is flagged as unavailable) Tj ET
+BT /F1 9 Tf 68 284 Td (information.) Tj ET
+BT /F2 9 Tf 54 268 Td (*) Tj ET
+BT /F1 9 Tf 68 268 Td (**Top-K Retrieval**: The Top-$K$ highest-scoring surviving chunk indices \(e.g.,) Tj ET
+BT /F1 9 Tf 68 255 Td (Top-1, Top-3, Top-5\) are selected for output.) Tj ET
+BT /F2 9 Tf 54 239 Td (*) Tj ET
+BT /F1 9 Tf 68 239 Td (**Context Assembly**: For the Top-$K$ surviving chunks, the system retrieves the) Tj ET
+BT /F1 9 Tf 68 226 Td (cleaned chunk text, document name, chunk index, and metadata from SQLite.) Tj ET
+BT /F2 9 Tf 54 210 Td (*) Tj ET
+BT /F1 9 Tf 68 210 Td (**Retrieval Result**: The matched chunks, similarity scores, and source file) Tj ET
+BT /F1 9 Tf 68 197 Td (citations are assembled into a structured retrieval payload and returned to the) Tj ET
+BT /F1 9 Tf 68 184 Td (client interface for display. *\(Clarification: Actual natural language answer) Tj ET
+BT /F1 9 Tf 68 171 Td (synthesis and LLM response generation belong strictly to Milestone 2, not Milestone) Tj ET
+BT /F1 9 Tf 68 158 Td (1.4\).*) Tj ET
+BT /F1 9 Tf 54 142 Td (---) Tj ET
+BT /F2 13 Tf 54 116 Td (7. Milestone 1 Implementation Boundaries vs Future Milestones) Tj ET
+BT /F1 9 Tf 54 98 Td (To maintain rigorous development hygiene, the table below explicitly delineates the) Tj ET
+BT /F1 9 Tf 54 85 Td (operational status of each milestone module:) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 16 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+36 0 obj
+<< /Length 2059 >>
+stream
+BT /F3 7.5 Tf 54 730 Td (Component | Correct Status) Tj ET
+BT /F3 7.5 Tf 54 718 Td (M1.1 Research and Technical Understanding | Completed) Tj ET
+BT /F3 7.5 Tf 54 706 Td (M1.2 System Architecture and Data Models | Completed) Tj ET
+BT /F3 7.5 Tf 54 694 Td (M1.3 Knowledge Base Ingestion | Completed & Tested) Tj ET
+BT /F3 7.5 Tf 54 682 Td (M1.4 RAG Retrieval and Evaluation | Completed & Tested) Tj ET
+BT /F3 7.5 Tf 54 670 Td (Five-agent runtime | Future Scope  --  M2) Tj ET
+BT /F3 7.5 Tf 54 658 Td (LLM response generation | Future Scope  --  M2) Tj ET
+BT /F3 7.5 Tf 54 646 Td (Voice runtime integration | Future Scope  --  M2) Tj ET
+BT /F2 11 Tf 54 628 Td (Detailed Implementation Scope Matrix) Tj ET
+BT /F3 7.5 Tf 54 612 Td (Module / Scope Area | Milestone 1 Status | Milestone 1 Scope Details | Milestone 2 & Beyond \(Future Scope) Tj ET
+BT /F3 7.5 Tf 54 600 Td (**M1.1: Research & Technical Understanding** | **COMPLETED** | Comprehensive research document covering R) Tj ET
+BT /F3 7.5 Tf 54 588 Td (**M1.2: System Architecture & Data Models** | **COMPLETED** | Complete system architecture diagrams, 5-ag) Tj ET
+BT /F3 7.5 Tf 54 576 Td (**M1.3: Knowledge Base Ingestion Module** | **COMPLETED & TESTED** | Implemented multi-format document ex) Tj ET
+BT /F3 7.5 Tf 54 564 Td (**M1.4: RAG Retrieval Pipeline & Evaluation** | **COMPLETED & TESTED** | Implemented semantic search usin) Tj ET
+BT /F3 7.5 Tf 54 552 Td (**5-Agent System Execution** | **FUTURE SCOPE  --  M2** | Designed and architecturally specified in M1.2. Ze) Tj ET
+BT /F3 7.5 Tf 54 540 Td (**Response Generation & Citations** | **FUTURE SCOPE  --  M2** | Grounded prompt templates and citation form) Tj ET
+BT /F3 7.5 Tf 54 528 Td (**Voice Interaction Integration** | **FUTURE SCOPE  --  M2** | Architectural design of Web Speech API event ) Tj ET
+BT /F3 7.5 Tf 54 516 Td (**Distributed Vector Storage** | **FUTURE SCOPE  --  M2** | Local NumPy vector matrix implemented for M1.3/M) Tj ET
+BT /F1 7.5 Tf 54 35 Td (Page 17 of 17  --  System Architecture Specification) Tj ET
+54 45 m 558 45 l S
+endstream
+endobj
+37 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+38 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+39 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 40
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000222 00000 n 
+0000000372 00000 n 
+0000000522 00000 n 
+0000000672 00000 n 
+0000000822 00000 n 
+0000000972 00000 n 
+0000001122 00000 n 
+0000001272 00000 n 
+0000001423 00000 n 
+0000001574 00000 n 
+0000001725 00000 n 
+0000001876 00000 n 
+0000002027 00000 n 
+0000002178 00000 n 
+0000002329 00000 n 
+0000002480 00000 n 
+0000002631 00000 n 
+0000002782 00000 n 
+0000006898 00000 n 
+0000011769 00000 n 
+0000016374 00000 n 
+0000021384 00000 n 
+0000026314 00000 n 
+0000030652 00000 n 
+0000035067 00000 n 
+0000039408 00000 n 
+0000043606 00000 n 
+0000048096 00000 n 
+0000052170 00000 n 
+0000057308 00000 n 
+0000062630 00000 n 
+0000066755 00000 n 
+0000071701 00000 n 
+0000076801 00000 n 
+0000078913 00000 n 
+0000078984 00000 n 
+0000079060 00000 n 
+trailer
+<< /Size 40 /Root 1 0 R >>
+startxref
+79129
+%%EOF
