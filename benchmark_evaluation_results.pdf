@@ -1,0 +1,79 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R /F3 7 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3252 >>
+stream
+0.05 0.09 0.16 rg 50 665 512 80 re f
+BT 1 1 1 rg /F2 15 Tf 65 720 Td (DUAL-DOMAIN BENCHMARK EVALUATION RESULTS) Tj ET
+BT 0.22 0.74 0.97 rg /F2 10.5 Tf 65 700 Td (20 Standardized Grounding Queries Evaluated Against Primary Knowledge Base) Tj ET
+BT 0.7 0.75 0.82 rg /F1 8.5 Tf 65 680 Td (Metrics: Top-1: 93.33% | Top-3: 100.0% | Top-5: 100.0% | Rejection: 80.0%) Tj ET
+0 0 0 rg
+0.14 0.38 0.92 rg 50 626 512 2 re f
+BT 0.08 0.18 0.45 rg /F2 12.5 Tf 50 630 Td (1. BENCHMARK SUMMARY & METRICS) Tj ET
+0 0 0 rg
+BT /F1 8.5 Tf 50 610 Td (This report provides an empirical verification of the Milestone 1.4 Cosine Similarity) Tj ET
+BT /F1 8.5 Tf 50 598 Td (Vector Retrieval Engine across 20 standardized queries evaluated against 8 primary) Tj ET
+BT /F1 8.5 Tf 50 586 Td (documents across Cloud/DevOps and Healthcare domains. The evaluation tests factual) Tj ET
+BT /F1 8.5 Tf 50 574 Td (recall, procedural multi-step retrieval, comparative tabular analysis, and out-of-domain) Tj ET
+BT /F1 8.5 Tf 50 562 Td (hallucination rejection.) Tj ET
+0.14 0.38 0.92 rg 50 532 512 2 re f
+BT 0.08 0.18 0.45 rg /F2 12.5 Tf 50 536 Td (2. QUERY-BY-QUERY EVALUATION LOG \(20 QUERIES\)) Tj ET
+0 0 0 rg
+0.9 0.93 0.97 rg 50 506 512 14 re f 0 0 0 rg
+BT /F2 8 Tf 55 508 Td (Query ID | Type | Domain | Score | Status | Top-1 | Top-3 | SafeRej) Tj ET
+BT /F3 7.5 Tf 55 494 Td (Q-CLOUD-01 | factua | cloud_d | 0.733 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 481 Td (Q-CLOUD-02 | factua | cloud_d | 0.724 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 468 Td (Q-CLOUD-03 | proced | cloud_d | 0.553 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 455 Td (Q-CLOUD-04 | proced | cloud_d | 0.570 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 442 Td (Q-CLOUD-05 | compar | cloud_d | 0.618 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 429 Td (Q-CLOUD-06 | compar | cloud_d | 0.646 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 416 Td (Q-CLOUD-07 | factua | cloud_d | 0.662 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 403 Td (Q-CLOUD-08 | unavai | cloud_d | 0.239 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 390 Td (Q-CLOUD-09 | unavai | cloud_d | 0.243 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 377 Td (Q-CLOUD-10 | unavai | cloud_d | 0.211 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 364 Td (Q-HEALTH-0 | factua | healthc | 0.606 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 351 Td (Q-HEALTH-0 | factua | healthc | 0.598 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 338 Td (Q-HEALTH-0 | proced | healthc | 0.576 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 325 Td (Q-HEALTH-0 | proced | healthc | 0.639 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 312 Td (Q-HEALTH-0 | compar | healthc | 0.511 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 299 Td (Q-HEALTH-0 | compar | healthc | 0.553 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 286 Td (Q-HEALTH-0 | factua | healthc | 0.704 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 273 Td (Q-HEALTH-0 | unavai | healthc | 0.415 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 260 Td (Q-HEALTH-0 | unavai | healthc | 0.071 |  | NO | NO | NO) Tj ET
+BT /F3 7.5 Tf 55 247 Td (Q-HEALTH-1 | factua | healthc | 0.472 |  | NO | NO | NO) Tj ET
+BT /F1 7.2 Tf 50 32 Td (Milestone 1 Technical Defense Blueprint | Page 1 of 1 | Development of AI Knowledge Retrieval Platform) Tj ET
+0.7 0.7 0.7 rg 50 42 m 562 42 l S 0 0 0 rg
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000261 00000 n 
+0000003565 00000 n 
+0000003635 00000 n 
+0000003710 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+3778
+%%EOF
