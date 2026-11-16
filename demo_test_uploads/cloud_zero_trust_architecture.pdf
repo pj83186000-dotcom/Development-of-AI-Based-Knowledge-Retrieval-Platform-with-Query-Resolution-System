@@ -1,0 +1,66 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 1373 >>
+stream
+BT
+/F1 16 Tf
+50 750 Td
+(Cloud Zero Trust Architecture and Network Microsegmentation) Tj
+/F1 10 Tf
+0 -24 Td
+(Zero Trust Architecture \(ZTA\) is a cybersecurity paradigm founded on the core) Tj
+0 -14 Td
+(principle of continuous verification and explicit trust evaluation. Under) Tj
+0 -14 Td
+(traditional perimeter security models, entities within the internal network) Tj
+0 -14 Td
+(perimeter were implicitly trusted once past external edge firewalls. In modern) Tj
+0 -14 Td
+(distributed cloud environments with multi-tenant Kubernetes clusters, hybrid) Tj
+0 -14 Td
+(clouds, and remote microservices, this perimeter model is inadequate.) Tj
+0 -18 Td
+(The Zero Trust framework requires five key tenets: explicit identity) Tj
+0 -14 Td
+(verification using multi-factor authentication, principle of least privilege) Tj
+0 -14 Td
+(access, continuous posture assessment, end-to-end data encryption in transit via) Tj
+0 -14 Td
+(mutual TLS \(mTLS\), and assumption of breach with internal microsegmentation.) Tj
+0 -18 Td
+(Network microsegmentation isolates individual container workloads, pods, and) Tj
+0 -14 Td
+(service tiers using software-defined networking policies. East-west traffic) Tj
+0 -14 Td
+(between internal microservices is inspected and filtered through Envoy service) Tj
+0 -14 Td
+(mesh sidecars, preventing lateral movement if an edge pod is compromised.) Tj
+0 -18 Td
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000001666 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1736
+%%EOF

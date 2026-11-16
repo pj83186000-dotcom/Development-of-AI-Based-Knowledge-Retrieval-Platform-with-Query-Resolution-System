@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Retrieval Platform - Milestone 1 Prototype</title>
+    <style>
+        :root {
+            --bg-base: #0b0f19;
+            --bg-surface: #111827;
+            --bg-card: #151f32;
+            --bg-card-hover: #1c2842;
+            --bg-input: #0c1322;
+            --bg-contrast: #1e293b;
+            
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --border-medium: rgba(255, 255, 255, 0.14);
+            --border-accent: rgba(56, 189, 248, 0.35);
+
+            --primary: #38bdf8;
+            --primary-hover: #0ea5e9;
+            --primary-bg: rgba(56, 189, 248, 0.12);
+            --primary-glow: rgba(56, 189, 248, 0.25);
+
+            --accent-indigo: #818cf8;
+            --accent-indigo-bg: rgba(99, 102, 241, 0.15);
+
+            --success: #34d399;
+            --success-bg: rgba(16, 185, 129, 0.15);
+            --success-border: rgba(16, 185, 129, 0.35);
+
+            --warning: #fbbf24;
+            --warning-bg: rgba(245, 158, 11, 0.15);
+            --warning-border: rgba(245, 158, 11, 0.35);
+
+            --danger: #f87171;
+            --danger-bg: rgba(239, 68, 68, 0.15);
+            --danger-border: rgba(239, 68, 68, 0.35);
+
+            --text-main: #f8fafc;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 14px;
+            --shadow-card: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        /* Top Header */
+        header {
+            background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #1e1b4b 100%);
+            border-bottom: 1px solid var(--border-subtle);
+            padding: 1.25rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo-area h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            color: #ffffff;
+        }
+
+        .logo-area h1 span.highlight {
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .logo-area p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.3rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .badge-milestone {
+            background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(99, 102, 241, 0.2) 100%);
+            color: var(--primary);
+            border: 1px solid var(--border-accent);
+        }
+
+        .badge-status {
+            background: var(--success-bg);
+            color: var(--success);
+            border: 1px solid var(--success-border);
+            display: flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+
+        .btn-swagger {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.35rem 0.85rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.12);
+            border: 1px solid rgba(56, 189, 248, 0.35);
+            transition: all 0.2s ease;
+        }
+
+        .btn-swagger:hover {
+            background: rgba(56, 189, 248, 0.25);
+            color: #ffffff;
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 0 8px var(--success);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.85); }
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: #0d1424;
+            border-bottom: 1px solid var(--border-subtle);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(8px);
+        }
+
+        .tabs-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            padding: 0 2rem;
+            gap: 0.75rem;
+        }
+
+        .tab-btn {
+            padding: 1rem 1.35rem;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .tab-btn:hover {
+            color: var(--text-main);
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            border-bottom-color: var(--primary);
+            text-shadow: 0 0 12px var(--primary-glow);
+        }
+
+        /* Main Workspace */
+        main {
+            max-width: 1300px;
+            width: 100%;
+            margin: 1.75rem auto;
+            padding: 0 2rem;
+            flex: 1;
+        }
+
+        .tab-panel {
+            display: none;
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Grids */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 900px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-subtle);
+            box-shadow: var(--shadow-card);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.85rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Form Controls */
+        .form-group {
+            margin-bottom: 1.1rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.84rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 0.45rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 0.7rem 0.9rem;
+            background: var(--bg-input);
+            border: 1px solid var(--border-medium);
+            border-radius: var(--radius-sm);
+            font-size: 0.92rem;
+            color: var(--text-main);
+            transition: all 0.2s ease;
+        }
+
+        input[type="text"]:focus, input[type="number"]:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px var(--primary-glow);
+            background: #0d1527;
+        }
+
+        select option {
+            background-color: var(--bg-surface);
+            color: var(--text-main);
+        }
+
+        .slider-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.3rem;
+        }
+
+        input[type="range"] {
+            flex: 1;
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+
+        .slider-val {
+            font-weight: 700;
+            color: var(--primary);
+            min-width: 45px;
+            font-size: 1rem;
+            text-shadow: 0 0 8px var(--primary-glow);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.35rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.92rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+            color: #ffffff;
+            box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+        }
+
+        .btn-primary:hover {
+            filter: brightness(1.12);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .btn-outline {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border-medium);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.08);
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        /* Drag & Drop Upload Zone */
+        .dropzone {
+            border: 2px dashed rgba(56, 189, 248, 0.35);
+            border-radius: var(--radius-md);
+            padding: 2.2rem 1.5rem;
+            text-align: center;
+            background: rgba(15, 23, 42, 0.5);
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .dropzone:hover, .dropzone.dragover {
+            border-color: var(--primary);
+            background: rgba(56, 189, 248, 0.08);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.15) inset;
+        }
+
+        .dropzone strong {
+            color: var(--text-main);
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .dropzone p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            margin-top: 0.35rem;
+        }
+
+        /* Suggestion Chips */
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.45rem;
+            margin-top: 0.5rem;
+        }
+
+        .chip {
+            background: rgba(30, 41, 59, 0.7);
+            color: var(--text-secondary);
+            padding: 0.38rem 0.8rem;
+            border-radius: 9999px;
+            font-size: 0.78rem;
+            font-weight: 500;
+            cursor: pointer;
+            border: 1px solid var(--border-subtle);
+            transition: all 0.2s ease;
+        }
+
+        .chip:hover {
+            background: var(--primary-bg);
+            color: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 0 10px var(--primary-glow);
+        }
+
+        /* Retrieval Results Cards */
+        .result-box {
+            background: #0f172a;
+            border-radius: var(--radius-md);
+            border: 1px solid var(--border-subtle);
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            transition: all 0.2s ease;
+        }
+
+        .result-box:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-accent);
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.65rem;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        .result-rank {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.92rem;
+        }
+
+        .score-pill {
+            padding: 0.22rem 0.65rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
+        }
+
+        .score-high {
+            background-color: var(--success-bg);
+            color: var(--success);
+            border: 1px solid var(--success-border);
+        }
+
+        .score-med {
+            background-color: var(--warning-bg);
+            color: var(--warning);
+            border: 1px solid var(--warning-border);
+        }
+
+        .score-low {
+            background-color: var(--danger-bg);
+            color: var(--danger);
+            border: 1px solid var(--danger-border);
+        }
+
+        .result-text {
+            font-size: 0.88rem;
+            color: #e2e8f0;
+            line-height: 1.6;
+            background: #090e1a;
+            padding: 0.9rem;
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--primary);
+        }
+
+        /* Document Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.88rem;
+        }
+
+        th {
+            background-color: #0c1322;
+            color: var(--text-secondary);
+            text-align: left;
+            padding: 0.85rem 1rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-medium);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 0.75rem;
+        }
+
+        td {
+            padding: 0.85rem 1rem;
+            border-bottom: 1px solid var(--border-subtle);
+            color: #e2e8f0;
+        }
+
+        tr:hover td {
+            background-color: rgba(56, 189, 248, 0.04);
+        }
+
+        .tag-format {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+        .tag-pdf { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.35); }
+        .tag-docx { background: rgba(59, 130, 246, 0.2); color: #93c5fd; border: 1px solid rgba(59, 130, 246, 0.35); }
+        .tag-txt { background: rgba(148, 163, 184, 0.2); color: #cbd5e1; border: 1px solid rgba(148, 163, 184, 0.35); }
+        .tag-csv { background: rgba(16, 185, 129, 0.2); color: #6ee7b7; border: 1px solid rgba(16, 185, 129, 0.35); }
+
+        /* KPI Cards */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .kpi-card {
+            background: #101728;
+            border-radius: var(--radius-md);
+            padding: 1.35rem 1.25rem;
+            border: 1px solid var(--border-subtle);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .kpi-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--border-accent);
+        }
+
+        .kpi-num {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin: 0.4rem 0;
+            letter-spacing: -0.02em;
+        }
+
+        .kpi-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Banner alerts */
+        .alert {
+            padding: 1rem 1.2rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .alert-info { 
+            background: rgba(56, 189, 248, 0.1); 
+            color: #bae6fd; 
+            border: 1px solid rgba(56, 189, 248, 0.25); 
+        }
+        .alert-warn { 
+            background: rgba(245, 158, 11, 0.1); 
+            color: #fde68a; 
+            border: 1px solid rgba(245, 158, 11, 0.25); 
+        }
+        .alert-success { 
+            background: rgba(16, 185, 129, 0.1); 
+            color: #a7f3d0; 
+            border: 1px solid rgba(16, 185, 129, 0.25); 
+        }
+
+        /* Footer */
+        footer {
+            background: #090e18;
+            border-top: 1px solid var(--border-subtle);
+            padding: 1.25rem 2rem;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="logo-area">
+                <h1>🧠 <span class="highlight">AI Knowledge Retrieval Platform</span></h1>
+                <p>Retrieval-Augmented Generation (RAG) System with Semantic Vector Search</p>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-milestone">Milestone 1 Prototype</span>
+                <span class="badge badge-status" id="live-status-pill">
+                    <span class="pulse-dot"></span> System Online
+                </span>
+                <a href="/docs" target="_blank" class="btn-swagger" title="Open Interactive Swagger OpenAPI Documentation">
+                    ⚡ Swagger API Docs ↗
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs (Only 3 functional tabs) -->
+    <nav>
+        <div class="tabs-container">
+            <button class="tab-btn active" onclick="switchTab('query-tab')">🔍 Semantic Search</button>
+            <button class="tab-btn" onclick="switchTab('upload-tab')">📤 Document Manager</button>
+            <button class="tab-btn" onclick="switchTab('benchmark-tab')">📊 Dual-Domain Benchmark</button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- TAB 1: SEMANTIC SEARCH -->
+        <div id="query-tab" class="tab-panel active">
+            <div class="grid-2">
+                <!-- Query Input Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">🔍 Query Resolution Console</span>
+                        <span class="badge" style="background:var(--accent-indigo-bg); color:var(--accent-indigo); border: 1px solid rgba(129, 140, 248, 0.3);">all-MiniLM-L6-v2 (384-D)</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="query-input">Enter Natural Language Query:</label>
+                        <textarea id="query-input" rows="3" placeholder="e.g. What is the role of etcd in Kubernetes cluster architecture?">What is the role of etcd in Kubernetes cluster architecture?</textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Sample Domain Queries (Click to populate):</label>
+                        <div class="chips">
+                            <span class="chip" onclick="setQuery('What is the role of etcd in Kubernetes cluster architecture?')">☁️ etcd Architecture</span>
+                            <span class="chip" onclick="setQuery('What automated action occurs when a container image fails security vulnerability scan?')">☁️ CI/CD Scan Failure</span>
+                            <span class="chip" onclick="setQuery('Compare normal resting heart rate ranges for neonates versus adults.')">🏥 Heart Rates (Neonate vs Adult)</span>
+                            <span class="chip" onclick="setQuery('What is the initial evaluation timeframe for ESI Level 2 Emergent triage patients?')">🏥 ESI Level 2 Triage</span>
+                            <span class="chip" onclick="setQuery('How do you bake sourdough bread with a cast iron Dutch oven?')">❌ Out-of-Domain (Unavailable)</span>
+                        </div>
+                    </div>
+
+                    <div class="grid-2" style="margin-bottom: 1rem;">
+                        <div class="form-group">
+                            <label for="domain-select">Domain Filter:</label>
+                            <select id="domain-select">
+                                <option value="">All Domains (Cloud + Healthcare)</option>
+                                <option value="cloud_devops">Cloud & DevOps</option>
+                                <option value="healthcare">Healthcare & Clinical</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="topk-select">Top-K Results:</label>
+                            <select id="topk-select">
+                                <option value="1">Top 1 Result</option>
+                                <option value="3" selected>Top 3 Results</option>
+                                <option value="5">Top 5 Results</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Similarity Threshold Cutoff:</label>
+                        <div class="slider-group">
+                            <input type="range" id="threshold-slider" min="0" max="1" step="0.05" value="0.35" oninput="document.getElementById('thresh-display').innerText = this.value">
+                            <span class="slider-val" id="thresh-display">0.35</span>
+                        </div>
+                        <small style="color:var(--text-muted); font-size: 0.78rem;">Queries scoring below this cutoff are safely rejected as unavailable.</small>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%; padding: 0.85rem;" onclick="executeSearch()">
+                        ⚡ Run Vector Cosine Similarity Search
+                    </button>
+                </div>
+
+                <!-- Query Results Display Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">📋 Grounded Retrieval Results</span>
+                        <span id="result-status-badge" class="badge" style="background:var(--bg-input); color:var(--text-secondary); border:1px solid var(--border-subtle);">Awaiting Query</span>
+                    </div>
+
+                    <div id="results-container">
+                        <p style="color:var(--text-muted); font-size: 0.9rem; text-align:center; padding: 2.5rem 0;">
+                            Submit a query on the left to compute dot product Cosine Similarity and view ranked text passages with exact source file citations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: DOCUMENT MANAGER -->
+        <div id="upload-tab" class="tab-panel">
+            <div class="grid-2">
+                <!-- Upload Form -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">📤 Ingest New Knowledge Document</span>
+                        <span class="badge" style="background:rgba(168, 85, 247, 0.15); color:#c084fc; border:1px solid rgba(168, 85, 247, 0.3);">PDF • DOCX • TXT • CSV</span>
+                    </div>
+
+                    <div class="dropzone" id="drop-area" onclick="document.getElementById('file-input').click()">
+                        <div style="font-size: 2.2rem;">📁</div>
+                        <strong>Click to select a file or drag & drop here</strong>
+                        <p>Supports .pdf, .docx, .txt, .csv (Up to 10 MB)</p>
+                        <input type="file" id="file-input" style="display: none;" onchange="handleFileSelected(this.files[0])">
+                    </div>
+                    <p id="selected-filename" style="margin-top: 0.75rem; font-size: 0.85rem; font-weight: 600; color: var(--primary); text-align: center;"></p>
+
+                    <div class="grid-2" style="margin-top: 1rem;">
+                        <div class="form-group">
+                            <label for="upload-domain">Domain Classification:</label>
+                            <select id="upload-domain">
+                                <option value="cloud_devops">Cloud & DevOps</option>
+                                <option value="healthcare">Healthcare & Clinical</option>
+                                <option value="general">General Corporate</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="chunk-size-input">Chunk Size (chars):</label>
+                            <input type="number" id="chunk-size-input" value="500">
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" style="width: 100%;" onclick="uploadDocument()">
+                        📥 Process & Index Document
+                    </button>
+
+                    <div id="upload-feedback" style="margin-top: 1rem;"></div>
+                </div>
+
+                <!-- Document Statistics -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">📚 Active Knowledge Base Documents</span>
+                        <button class="btn btn-outline" style="padding: 0.35rem 0.75rem; font-size:0.8rem;" onclick="loadDocumentList()">🔄 Refresh</button>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table id="doc-table">
+                            <thead>
+                                <tr>
+                                    <th>Format</th>
+                                    <th>Document Name</th>
+                                    <th>Domain</th>
+                                    <th>Chunks</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="doc-table-body">
+                                <tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding: 2rem;">Loading documents...</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: DUAL-DOMAIN BENCHMARK -->
+        <div id="benchmark-tab" class="tab-panel">
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">📊 Dual-Domain Benchmark Evaluation Metrics</span>
+                    <button class="btn btn-primary" onclick="runLiveBenchmark()">🚀 Execute Live 20-Query Benchmark</button>
+                </div>
+
+                <div class="kpi-grid">
+                    <div class="kpi-card">
+                        <div class="kpi-label">Top-1 Accuracy</div>
+                        <div class="kpi-num" id="kpi-top1" style="color: #38bdf8; text-shadow: 0 0 14px rgba(56, 189, 248, 0.4);">93.33%</div>
+                        <small style="color:var(--text-secondary);">14 / 15 relevant queries</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Top-3 Accuracy</div>
+                        <div class="kpi-num" id="kpi-top3" style="color: #34d399; text-shadow: 0 0 14px rgba(52, 211, 153, 0.4);">100.0%</div>
+                        <small style="color:var(--text-secondary);">15 / 15 relevant queries</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Top-5 Accuracy</div>
+                        <div class="kpi-num" id="kpi-top5" style="color: #10b981; text-shadow: 0 0 14px rgba(16, 185, 129, 0.4);">100.0%</div>
+                        <small style="color:var(--text-secondary);">15 / 15 relevant queries</small>
+                    </div>
+                    <div class="kpi-card">
+                        <div class="kpi-label">Unavailable Rejection</div>
+                        <div class="kpi-num" id="kpi-unavail" style="color: #fbbf24; text-shadow: 0 0 14px rgba(251, 191, 36, 0.4);">80.0%</div>
+                        <small style="color:var(--text-secondary);">4 / 5 out-of-domain queries</small>
+                    </div>
+                </div>
+
+                <div id="benchmark-feedback"></div>
+
+                <div class="alert alert-info">
+                    ℹ️ <strong>Evaluation Scope:</strong> 20 standardized queries evaluated against 8 indexed documents across Cloud/DevOps and Healthcare domains. Categories: Factual, Procedural, Comparative, and Out-of-Domain/Unavailable.
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Development of AI-Based Knowledge Retrieval Platform with Query Resolution System &bull; Milestone 1 Prototype
+    </footer>
+
+    <!-- Frontend Interactive Script -->
+    <script>
+        // Tab switching
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            
+            const targetPanel = document.getElementById(tabId);
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+            if (event && event.currentTarget) {
+                event.currentTarget.classList.add('active');
+            }
+
+            if (tabId === 'upload-tab') {
+                loadDocumentList();
+            }
+        }
+
+        function setQuery(text) {
+            document.getElementById('query-input').value = text;
+        }
+
+        // Drag and Drop listeners
+        const dropArea = document.getElementById('drop-area');
+        if (dropArea) {
+            ['dragenter', 'dragover'].forEach(eventName => {
+                dropArea.addEventListener(eventName, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropArea.classList.add('dragover');
+                }, false);
+            });
+
+            ['dragleave', 'drop'].forEach(eventName => {
+                dropArea.addEventListener(eventName, (e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    dropArea.classList.remove('dragover');
+                }, false);
+            });
+
+            dropArea.addEventListener('drop', (e) => {
+                const dt = e.dataTransfer;
+                const files = dt.files;
+                if (files && files.length > 0) {
+                    handleFileSelected(files[0]);
+                }
+            }, false);
+        }
+
+        // Semantic Search Execution
+        async function executeSearch() {
+            const query = document.getElementById('query-input').value.trim();
+            const domain = document.getElementById('domain-select').value;
+            const top_k = parseInt(document.getElementById('topk-select').value);
+            const threshold = parseFloat(document.getElementById('threshold-slider').value);
+            const container = document.getElementById('results-container');
+            const statusBadge = document.getElementById('result-status-badge');
+
+            if (!query) {
+                alert('Please enter a query.');
+                return;
+            }
+
+            container.innerHTML = '<p style="text-align:center; padding: 2rem; color:var(--text-secondary);">⚡ Computing Cosine Similarity dot product against 384-D embeddings...</p>';
+            statusBadge.innerText = 'Searching...';
+            statusBadge.style.background = 'var(--primary-bg)';
+            statusBadge.style.color = 'var(--primary)';
+            statusBadge.style.border = '1px solid var(--border-accent)';
+
+            try {
+                const response = await fetch('/api/query/retrieve', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        query: query,
+                        domain: domain || null,
+                        top_k: top_k,
+                        similarity_threshold: threshold
+                    })
+                });
+
+                if (!response.ok) {
+                    const errData = await response.json().catch(() => ({}));
+                    throw new Error(errData.detail || `Server returned HTTP ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                if (data.status === 'unavailable' || !data.has_sufficient_context || !data.retrieved_chunks || data.retrieved_chunks.length === 0) {
+                    statusBadge.innerText = 'Rejected (Unavailable)';
+                    statusBadge.style.background = 'var(--danger-bg)';
+                    statusBadge.style.color = 'var(--danger)';
+                    statusBadge.style.border = '1px solid var(--danger-border)';
+
+                    container.innerHTML = `
+                        <div class="alert alert-warn">
+                            ⚠️ <strong>Out-of-Domain or Insufficient Context:</strong><br>
+                            The maximum similarity score (${(data.max_similarity_score || 0).toFixed(4)}) is below the required threshold cutoff (${threshold.toFixed(2)}).
+                            The system safely rejected this query to prevent ungrounded hallucinations.
+                        </div>
+                    `;
+                    return;
+                }
+
+                statusBadge.innerText = `Retrieved (${data.retrieved_chunks.length} Grounded)`;
+                statusBadge.style.background = 'var(--success-bg)';
+                statusBadge.style.color = 'var(--success)';
+                statusBadge.style.border = '1px solid var(--success-border)';
+
+                let html = `
+                    <div style="margin-bottom: 0.9rem; font-size: 0.85rem; color: var(--text-secondary); display: flex; justify-content: space-between; flex-wrap:wrap; gap:0.5rem;">
+                        <span>Scanned <strong>${data.total_indexed_chunks}</strong> vectors in SQLite</span>
+                        <span>Max Cosine Score: <strong style="color:var(--primary);">${data.max_similarity_score.toFixed(4)}</strong></span>
+                    </div>
+                `;
+
+                data.retrieved_chunks.forEach((chunk) => {
+                    const score = chunk.similarity_score;
+                    const scorePct = (score * 100).toFixed(1) + '%';
+                    const scoreClass = score >= 0.6 ? 'score-high' : (score >= 0.4 ? 'score-med' : 'score-low');
+
+                    html += `
+                        <div class="result-box">
+                            <div class="result-header">
+                                <span class="result-rank">#${chunk.rank} Ranked Passage</span>
+                                <div>
+                                    <span class="badge" style="background:var(--accent-indigo-bg); color:var(--accent-indigo); border:1px solid rgba(129, 140, 248, 0.3); margin-right: 0.4rem;">${chunk.domain}</span>
+                                    <span class="score-pill ${scoreClass}">Similarity: ${score.toFixed(4)} (${scorePct})</span>
+                                </div>
+                            </div>
+                            <div style="font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 0.45rem;">
+                                📄 Source: <u style="color:var(--primary);">${escapeHtml(chunk.document_name)}</u> (Chunk Index: ${chunk.chunk_index})
+                            </div>
+                            <div class="result-text">${escapeHtml(chunk.text)}</div>
+                        </div>
+                    `;
+                });
+
+                container.innerHTML = html;
+
+            } catch (err) {
+                statusBadge.innerText = 'Error';
+                statusBadge.style.background = 'var(--danger-bg)';
+                statusBadge.style.color = 'var(--danger)';
+                statusBadge.style.border = '1px solid var(--danger-border)';
+                container.innerHTML = `<div class="alert alert-warn">Error: ${escapeHtml(err.message)}</div>`;
+            }
+        }
+
+        // File Selection Helper
+        let currentSelectedFile = null;
+        function handleFileSelected(file) {
+            if (file) {
+                currentSelectedFile = file;
+                document.getElementById('selected-filename').innerText = `Selected: ${file.name} (${(file.size / 1024).toFixed(1)} KB)`;
+            }
+        }
+
+        // Document Upload
+        async function uploadDocument() {
+            if (!currentSelectedFile) {
+                alert('Please select a file to upload.');
+                return;
+            }
+
+            const domain = document.getElementById('upload-domain').value;
+            const chunkSize = document.getElementById('chunk-size-input').value;
+            const feedback = document.getElementById('upload-feedback');
+
+            feedback.innerHTML = '<div class="alert alert-info">⏳ Uploading, extracting text, generating 384-D embeddings, and saving to SQLite...</div>';
+
+            const formData = new FormData();
+            formData.append('file', currentSelectedFile);
+
+            try {
+                const response = await fetch(`/api/documents/upload?domain=${domain}&chunk_size=${chunkSize}`, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    const errData = await response.json().catch(() => ({}));
+                    throw new Error(errData.detail || `Upload failed (HTTP ${response.status})`);
+                }
+
+                const data = await response.json();
+
+                feedback.innerHTML = `
+                    <div class="alert alert-success">
+                        ✅ <strong>Upload Succeeded!</strong><br>
+                        Document <strong>${escapeHtml(data.filename)}</strong> ingested into SQLite:<br>
+                        • Document ID: <code>${escapeHtml(data.document_id)}</code><br>
+                        • Clean Chunks: <strong>${data.chunk_count}</strong><br>
+                        • 384-D Embeddings: <strong>${data.chunk_count}</strong> (${escapeHtml(data.embedding_status)})
+                    </div>
+                `;
+
+                loadDocumentList();
+                currentSelectedFile = null;
+                document.getElementById('file-input').value = '';
+                document.getElementById('selected-filename').innerText = '';
+
+            } catch (err) {
+                feedback.innerHTML = `<div class="alert alert-warn">⚠️ ${escapeHtml(err.message)}</div>`;
+            }
+        }
+
+        // Load Documents Table
+        async function loadDocumentList() {
+            const tbody = document.getElementById('doc-table-body');
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--text-secondary); padding: 1.5rem;">Loading SQLite inventory...</td></tr>';
+
+            try {
+                const response = await fetch('/api/documents/list');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                const docs = await response.json();
+
+                if (!docs || docs.length === 0) {
+                    tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding: 1.5rem;">No documents found in knowledge base.</td></tr>';
+                    return;
+                }
+
+                let html = '';
+                docs.forEach(d => {
+                    const formatClass = `tag-${d.file_type.toLowerCase()}`;
+                    html += `
+                        <tr>
+                            <td><span class="tag-format ${formatClass}">${escapeHtml(d.file_type)}</span></td>
+                            <td style="font-weight: 600; color:#ffffff;">${escapeHtml(d.filename)}</td>
+                            <td><span class="badge" style="background:var(--accent-indigo-bg); color:var(--accent-indigo); border:1px solid rgba(129, 140, 248, 0.3);">${escapeHtml(d.domain)}</span></td>
+                            <td><strong style="color:var(--primary);">${d.chunk_count}</strong> chunks</td>
+                            <td><span class="badge" style="background:var(--success-bg); color:var(--success); border:1px solid var(--success-border);"><span class="pulse-dot" style="width:6px;height:6px;"></span> ${escapeHtml(d.status)}</span></td>
+                        </tr>
+                    `;
+                });
+                tbody.innerHTML = html;
+
+            } catch (err) {
+                tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--danger); padding: 1.5rem;">Failed to load documents: ${escapeHtml(err.message)}</td></tr>`;
+            }
+        }
+
+        // Run Benchmark
+        async function runLiveBenchmark() {
+            const feedback = document.getElementById('benchmark-feedback');
+            feedback.innerHTML = '<div class="alert alert-info">⚡ Running standardized 20-query evaluation suite across Cloud and Healthcare domains...</div>';
+
+            try {
+                const response = await fetch('/api/query/evaluate?similarity_threshold=0.35', {
+                    method: 'POST'
+                });
+
+                if (!response.ok) {
+                    const errText = await response.text();
+                    throw new Error(`Server returned HTTP ${response.status}: ${errText}`);
+                }
+
+                const summary = await response.json();
+
+                document.getElementById('kpi-top1').innerText = `${summary.top_1_accuracy.toFixed(1)}%`;
+                document.getElementById('kpi-top3').innerText = `${summary.top_3_accuracy.toFixed(1)}%`;
+                document.getElementById('kpi-top5').innerText = `${summary.top_5_accuracy.toFixed(1)}%`;
+                document.getElementById('kpi-unavail').innerText = `${summary.unavailable_rejection_accuracy.toFixed(1)}%`;
+
+                feedback.innerHTML = `
+                    <div class="alert alert-success">
+                        ✅ <strong>Benchmark Completed!</strong> Evaluated ${summary.total_queries} queries (${summary.relevant_queries} relevant + ${summary.unavailable_queries} unavailable) against the primary SQLite knowledge base. Results logged to <code>${escapeHtml(summary.results_csv)}</code>.
+                    </div>
+                `;
+            } catch (err) {
+                feedback.innerHTML = `<div class="alert alert-warn">Benchmark error: ${escapeHtml(err.message)}</div>`;
+            }
+        }
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        // Initial setup on load
+        window.onload = function() {
+            loadDocumentList();
+        };
+    </script>
+</body>
+</html>

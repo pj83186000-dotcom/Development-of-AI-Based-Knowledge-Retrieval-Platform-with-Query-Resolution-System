@@ -8,7 +8,7 @@ Q-CLOUD-06,cloud_devops,comparative,Compare the responsibilities of kubelet vers
 Q-CLOUD-07,cloud_devops,factual,What encryption protocol is required for inter-service communication under zero trust policy?,network_security_policy.pdf,network_security_policy.pdf,0.6626,0.35,retrieved,True,True,True,True
 Q-CLOUD-08,cloud_devops,unavailable,How do you install Apache Cassandra database on bare-metal FreeBSD servers?,None (Unavailable),None,0.2392,0.35,unavailable,False,True,True,True
 Q-CLOUD-09,cloud_devops,unavailable,What are the rules and field positions of professional test cricket?,None (Unavailable),None,0.2432,0.35,unavailable,False,True,True,True
-Q-CLOUD-10,cloud_devops,unavailable,What is the historical timeline of mainframes developed by IBM in 1965?,None (Unavailable),None,0.2044,0.35,unavailable,False,True,True,True
+Q-CLOUD-10,cloud_devops,unavailable,What is the historical timeline of mainframes developed by IBM in 1965?,None (Unavailable),None,0.2114,0.35,unavailable,False,True,True,True
 Q-HEALTH-01,healthcare,factual,How many healthy volunteers participate in Phase 1 clinical trial safety evaluations?,clinical_trial_protocol.txt,clinical_trial_protocol.txt,0.6068,0.35,retrieved,True,True,True,True
 Q-HEALTH-02,healthcare,factual,What is the primary concern of clinical investigations according to Declaration of Helsinki?,clinical_trial_protocol.txt,clinical_trial_protocol.txt,0.5989,0.35,retrieved,True,True,True,True
 Q-HEALTH-03,healthcare,procedural,What is the initial evaluation timeframe for ESI Level 2 Emergent triage patients?,hospital_patient_triage_guidelines.docx,hospital_patient_triage_guidelines.docx,0.5763,0.35,retrieved,True,True,True,True

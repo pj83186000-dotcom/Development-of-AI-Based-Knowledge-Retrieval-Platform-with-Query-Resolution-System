@@ -1,10 +1,11 @@
 """Semantic retrieval API endpoint for Milestone 1.4 RAG search and evaluation."""
 
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 from fastapi import APIRouter, HTTPException, Query, status
 from pydantic import BaseModel, Field
 
-from backend.app.retrieval.evaluator import DualDomainEvaluator
+from backend.app.retrieval.evaluator import DualDomainEvaluator, RESULTS_CSV_PATH
 from backend.app.retrieval.search import (
     DEFAULT_SIMILARITY_THRESHOLD,
     SemanticSearchEngine,

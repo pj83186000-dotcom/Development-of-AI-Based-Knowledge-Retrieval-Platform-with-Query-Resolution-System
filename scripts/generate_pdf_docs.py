@@ -320,3 +320,4 @@ if __name__ == "__main__":
         tech_md, tech_pdf, "Technology Stack Specification"
     )
     print("PDF generation completed successfully!")
+

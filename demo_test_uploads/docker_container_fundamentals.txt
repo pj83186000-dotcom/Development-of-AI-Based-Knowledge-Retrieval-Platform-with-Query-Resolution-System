@@ -1,0 +1,21 @@
+Docker Container Fundamentals and Virtualization Architecture
+Domain: Cloud & DevOps
+Target Document: Container Lifecycle and Host Isolation Standards
+
+1. Containerization Architecture Overview:
+Containerization is an operating-system-level virtualization technique that allows software applications and all their dependencies to run in isolated user-space environments called containers. Unlike hardware-level hypervisors that virtualize physical hardware and require dedicated guest operating systems, containers share the host Linux kernel while maintaining rigorous process, filesystem, and network isolation.
+
+2. Linux Kernel Isolation Primitives:
+Docker relies fundamentally on two core Linux kernel subsystems:
+- Namespaces: Provide isolated views of system resources for each container process. This includes PID namespaces (process IDs), NET namespaces (network interfaces and routing tables), MNT namespaces (isolated mount points and filesystems), IPC namespaces (inter-process communication), and UTS namespaces (hostname and domain name isolation).
+- Control Groups (cgroups): Provide strict resource metering, monitoring, and limits on physical resources allocated to containers. Cgroups enforce upper limits on CPU cycles, memory utilization, block I/O bandwidth, and network bandwidth, preventing a rogue container from exhausting host resources.
+
+3. Image Layering and OverlayFS:
+Docker images are constructed using read-only image layers defined by the instructions in a Dockerfile. Each instruction (FROM, COPY, RUN) creates an immutable filesystem layer. When a container is instantiated from an image, Docker mounts an ephemeral read-write container layer on top using OverlayFS (storage driver). Any modified or newly created files reside in this top writable layer, preserving the underlying immutable image layers.
+
+4. Container Networking Modes:
+Docker provides several network drivers to facilitate communication:
+- Bridge: The default network mode for standalone containers. Creates a virtual bridge (docker0) on the host with internal subnet routing and NAT masquerading.
+- Host: Eliminates network isolation between the container and host, sharing the host network namespace directly for high-throughput, low-latency workloads.
+- Overlay: Creates a multi-host distributed virtual network enabling containers across different swarm or cluster nodes to communicate seamlessly without port mapping.
+- None: Completely disables container networking, useful for air-gapped security isolation or batch processing tasks.
